@@ -1,0 +1,248 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Exo+2|Noto+Sans+KR&display=swap');
+
+@font-face { font-family: 'NanumSquareRound'; src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+/*reset*/
+
+*{margin: 0; padding: 0;}
+li {list-style: none;}
+
+a {color: inherit; text-decoration: none;}
+
+/*layout*/
+.en {font-family: 'NanumSquareRound';}
+.wrap{width: 100%; margin: 0 auto; background-color: #fff; }
+
+
+
+body {font-family: 'NanumSquareRound', sans-serif;}
+
+/*layout*/
+header {width: 100%; height: 72px; background-color: rgba(255, 255, 255, 0.81); position: fixed; 
+z-index: 200;}
+header .innerHeader {width: 1070px; height: 100%; overflow: hidden; margin: 0 auto; position: relative;}
+header .innerHeader .logo {float: left;}
+header .innerHeader .logo a {display: block; width: 100%; height: 100%;}
+header .innerHeader .logo a img {width: 50%; height: 100%;}
+/*gnb*/
+header .innerHeader .gnb {float: left; left: 30%; position: absolute;}
+header .innerHeader .gnb li {float: left; padding:24px 30px;}
+header .innerHeader .gnb li a {display: block; width: 100%; height: 200%; font-size: 18px;
+color: #1cbaba;}
+header .innerHeader .gnb li a:hover .innerHeader .gnb li a:focus {color: #119e9e;}
+/*tnb*/
+header .innerHeader .tnb {float: right; margin-right: 50px; margin-top: 15px;}  
+header .innerHeader .tnb a {display: block; font-size: 14px; width: 100%;
+text-align: center; color: #1cbaba; font-size: 16px; padding: 10px 10px; border: 1px solid #1cbaba; border-radius: 30px; position: relative; overflow: hidden; z-index: 500; }
+header .innerHeader .tnb a:after {content: ''; position: absolute; left: 0; top: 0; width: 0%; height: 100%; }
+header .innerHeader .tnb a:hover:after {position: absolute; background: rgba(28, 186, 186, 0.35); transition: all 0.3s; width: 100%;}
+header .innerHeader .tnb .menu {color: red; float: right;}
+
+/*햄버거바*/
+header .gnbMo {font-size: 35px; display: none; position: absolute; top: 20%; color: #1cbaba;}
+
+/*culture*/
+.culture{position: relative; background-color: #fff;
+width: 100%; height: 65vh;}
+.culture h1{font-size: 28px; left: 20%; position: absolute; top: 110px;}
+.culture img{position: absolute; width: 60%;left: 20%; top: 170px;}
+.culture .special{font-size: 15px; display: block;
+position: absolute; top: 78%; left: 20%; line-height: 1.7; }
+
+/*communication*/
+.communication{ background-color: #f8f8f8; position: relative;
+position: absolute; left: 20px; display: inline-block; width: 100%;; height: 50%; left: 0px;
+}
+.communication h2{font-size: 20px; display: inline-block; position: absolute;
+left: 50%; top: 25%;}
+.communication h2 span{color: #1cbaba; }
+.communication p{position: absolute; left: 50%; top: 175px; line-height: 1.8;
+font-size: 14px; line-height: 2;}
+.communication img{width: 22%; position: absolute; left: 20%; }
+
+/*together*/
+.together{position: relative;
+position: absolute; display: inline-block; width: 100%; left: 0px;
+bottom: -20%;}
+.together h2{font-size: 20px; display: inline-block; position: absolute;
+left: 25%; top: 95px;}
+.together h2 span{color: #1cbaba; }
+.together p{position: absolute; left: 25%; bottom: -260px; line-height: 1.8;
+font-size: 14px; line-height: 2;}
+.together img{width: 22%; position: absolute; left: 55%; }
+
+/*freegrowup*/
+.freegrowup{
+position: absolute; left: 20px; display: inline-block; width: 100%; height: 50%; left: 0px; top: 170%;}
+.freegrowup h2{font-size: 20px; display: inline-block; position: absolute;
+left: 57%; top: 20%;}
+.freegrowup{content: '';width: 100%;
+position: absolute;}
+.freegrowup h2 span{color: #1cbaba; }
+.freegrowup p{position: absolute; left: 57%; top: 155px; line-height: 1.8;
+font-size: 14px; line-height: 2;}
+.freegrowup img{width: 32%; position: absolute; left: 15%; top: 50PX;}
+
+/*wegrow*/
+.wegrow{position: relative; display: inline-block; width: 100%; margin-top: 80%;}
+.wegrow h2{font-size: 20px; display: inline-block; position: absolute;
+left: 25%; top: 95px;}
+.wegrow h2 span{color: #1cbaba;}
+.wegrow p{position: absolute; left: 25%; bottom: -260px; line-height: 1.8;
+font-size: 14px; line-height: 2;}
+.wegrow img{width: 30%; position: absolute; left: 50%; top: 37px;}
+
+/*footer*/
+footer.footer {
+  padding: 32px;
+  border-top: 1px solid #979797;
+  max-height: 216px;
+  position: relative;	
+  top: 380px;
+}
+
+footer .container{position: absolute; top: 20%}
+
+footer.footer .footer__logo {
+  width: 10px;
+  height: 3px;
+  position: absolute;
+
+
+/*  background: url('/static/images/common/ic-logo-footer.png') no-repeat center transparent;*/
+  background-size: cover;
+  text-indent: -9999px;
+}
+footer.footer .footer__info {
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+
+  margin-top: 4px;
+}
+footer.footer .footer__info * {
+  letter-spacing: normal;
+}
+footer.footer .footer__info:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+footer.footer .footer__info .footer__info--detail {
+  float: left;
+}
+footer.footer .footer__info .footer__info--detail ul.representation-m {
+  margin-bottom: 25px;
+}
+footer.footer .footer__info .footer__info--detail ul:first-child {
+  margin-bottom: 12px;
+}
+footer.footer .footer__info .footer__info--detail ul li {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+}
+footer.footer .footer__info .footer__info--detail ul li span {
+  color: #666666;
+  margin-right: 10px;
+}
+footer.footer .footer__info .footer__info--detail ul li a {
+  font-weight: 700;
+}
+footer.footer .footer__info .footer__info--detail ul li:after {
+  content: '';
+  width: 1px;
+  height: 10px;
+  background-color: #cdcdcd;
+  display: inline-block;
+  margin: 0 20px;
+}
+footer.footer .footer__info .footer__info--detail ul li:last-child:after {
+  display: none;
+}
+footer.footer .footer__info .footer__info--detail p {
+  margin: 26px 0 0;
+  text-transform: uppercase;
+}
+footer.footer .footer__info .footer__info--sns {
+  /* margin-left: auto; */
+  float: right;
+  margin: 50px;0px;
+  position: absolute;
+right: -200%;
+}
+footer.footer .footer__info .footer__info--sns ul li {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 30px;
+
+}
+footer.footer .footer__info .footer__info--sns ul li:last-child {
+  margin-right: 0;
+}
+footer.footer .footer__info .footer__info--sns ul li a {
+  color: #222222;
+}
+@media (max-width: 767px) {
+  footer.footer {
+    padding: 32px 0 46px;
+  }
+  footer.footer .footer__logo {
+    margin: 0 auto;
+  }
+  footer.footer .footer__info {
+    text-align: center;
+  }
+  footer.footer .footer__info .footer__info--detail {
+    float: none;
+  }
+  footer.footer .footer__info .footer__info--detail ul:nth-child(1) li {
+    display: block;
+    margin-bottom: 12px;
+  }
+  footer.footer .footer__info .footer__info--detail ul:nth-child(1) li:last-child {
+    margin-bottom: 0;
+  }
+  footer.footer .footer__info .footer__info--detail ul:nth-child(1) li:after {
+    display: none;
+  }
+  footer.footer .footer__info .footer__info--sns {
+    display: none;
+  }
+  footer.footer .footer__info .footer__info--detail p {
+    font-size: 10px;
+    color: #666666;
+    letter-spacing: normal;
+  }
+}
+@media (max-width: 340px) {
+  footer.footer .footer__info .footer__info--detail ul li:after {
+    margin: 0 10px;
+  }
+}
+
+
+
+/*반응형*/
+
+/*1024*/
+@media screen and (max-width:1024px){
+    header .innerHeader {width: 95%; min-width: 90%; position: relative;
+    background-color: #d3ffff}
+	header .innerHeader .gnb,header .innerHeader .tnb {display: none;}
+	header .innerHeader h1.logo img{width: 60px;}
+	header .gnbMo {display: block; position: absolute; right: 5%;}
+	section.main .mainTitle h2.slogan{width: 80%; position: absolute; top:30px;}
+	section.main .mainTitle p{position: absolute; top: 23px}
+	section.main .mainTitle .view{position: absolute; top: 110px;}
+	section.brevirew{width: 100%; padding: 40px 0; position: relative;}
+	section.brevirew h2{width: 40%;  left: -25%; top: 20px; position: absolute;}
+    
+    section.culture h1{font-size:20px }
+    section.culture img{}
+}

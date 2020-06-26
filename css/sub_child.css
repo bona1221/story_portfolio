@@ -1,0 +1,53 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,700&display=swap'); 
+
+/*reset*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, tbody, tfoot, thead, tr, th, td {margin:0;padding:0;}
+* {margin: 0; padding: 0;}
+a {color:inherit; text-decoration: inherit;}
+li {list-style: none;}
+address, em, i { font-style: normal;}
+h1, h2, h3, h4, h5,h6 {font-size: inherit;}
+a:hover { text-decoration: none;}
+
+/*layout*/
+body{font-family: 'Noto Sans KR', sans-serif; font-size: 15px;}
+.wrap {width: 100%; margin: 0 auto;}
+
+/*------------------------------------------------------------------*/
+
+.child_package{width: 100%; height: 100vh;  background: #ffd1d1;}
+.child_package .child{width: 1400px; margin: 0 auto;}
+.child_package .child .top_child{position: relative;}
+.child_package .child .top_child span{font-size: 15px; float: right;}
+.child_package .child .top_child h3{font-size: 30px; font-weight: normal;}
+.child_package .child .top_child p{font-size: 17px; display: inline-block;}
+.child_package .child .top_child .img{width: 75%;}
+.child_package .child .top_child .img img{width: 100%; margin: 0 auto;}
+
+.bottom_txt {width: 100%; height: 100vh; background: #f1f1f1; position: relative; overflow: hidden;}
+.bottom_txt .txt{width: 1400px; margin: 0 auto;}
+.bottom_txt .txt h3{float: right; margin-right: 24%; margin-top: 7%; font-size: 20px; font-weight: normal;}
+.bottom_txt .txt h3:before{content: ''; position: absolute; border: 1px solid #6AA2AB; width: 500px; top: 13%;}
+.bottom_txt .txt span{float: right; margin-left: 45%; display: inline-block; margin-top: 50px; line-height: 1.6;}
+.bottom_txt .txt .img{width: 65%; position: absolute; top: 20%; left: 15%}
+.bottom_txt .txt .img img{width: 80%;}
+.bottom_txt .color_chip{position: relative;}
+.bottom_txt .color_chip ul{ padding: 2% 0; display: inline-block;
+position: absolute; right: 0; float: right; margin-top: 40%; margin-right:10%;}
+.bottom_txt .color_chip ul li{float: left; padding: 0 50px;}
+.bottom_txt .color_chip ul li:nth-child(2):before{content: ''; width: 75px; height: 180px; background: #B2E7EF; position: absolute; bottom: 100px; right: 80%;}
+.bottom_txt .color_chip ul li:nth-child(2):after{content: ''; position: absolute; width: 75px; height: 70px; background: #fff; top: -70%; right: 80%; border: 1px solid #ded9d9;}
+.bottom_txt .color_chip ul li:nth-child(3):before{content: ''; width: 75px; height: 180px; background: #F9C5DA; position: absolute; bottom: 100px; right: 57%; border: 1px solid #ded9d9;}
+.bottom_txt .color_chip ul li:nth-child(3):after{content: ''; position: absolute; width: 75px; height: 70px; background: #fff; top: -57px; left: 24%; right: 50px; border: 1px solid #ded9d9;}
+.bottom_txt .color_chip ul li:nth-child(4):before{content: ''; width: 75px; height: 180px; background: #4BCCB9; position: absolute; bottom: 100px; right: 34%; border: 1px solid #ded9d9;}
+.bottom_txt .color_chip ul li:nth-child(4):after{content: ''; position: absolute; width: 75px; height: 70px; background: #fff; top: -56px; left: 47.1%; right: 50px; border: 1px solid #ded9d9;}
+.bottom_txt .color_chip ul li span{font-size: 14px;}
+.bottom_txt .color_chip ul li:nth-child(1) span{position: absolute; top: -290px; font-size: 18px; left: 0;}
+.bottom_txt .color_chip ul li:nth-child(2) span{transform: rotate(90deg); position: absolute; top: -38%; right: 77%; z-index: 20;}
+.bottom_txt .color_chip ul li:nth-child(3) span{transform: rotate(90deg); position: absolute; left: 32%; top: -35%; z-index: 30;}
+.bottom_txt .color_chip ul li:nth-child(4) span{transform: rotate(90deg); 
+position: absolute; left: 55%; top: -33%; z-index: 40;}
+.bottom_txt .color_chip ul li:nth-child(2) span:before{content: '';position: absolute; border-bottom: 1px solid #B2E7EF; width: 63px; height: 22px; right: 2px;}
+.bottom_txt .color_chip ul li:nth-child(3) span:before{content: '';position: absolute; border-bottom: 1px solid #F9C5DA; width: 63px; height: 22px; right: 2px;}
+.bottom_txt .color_chip ul li:nth-child(4) span:before{content: '';position: absolute; border-bottom: 1px solid #4BCCB9; width: 63px; height: 22px; right: 2px;}

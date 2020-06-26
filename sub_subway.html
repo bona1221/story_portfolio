@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>sub_subway</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/sub_subway.css">
+    
+    <!--script-->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/scrolla.jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/splitting.min.js"></script>
+    
+
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <div class="innerheader">
+                <ul class="nav">
+                    <li><a href="list.html#webgallery">WEB DESIGN</a></li>
+                    <li><a href="list.html#package_gallery">PACKAGRE DESIGN</a></li>
+                    <li><a href="list.html#ulux_gallery">UI UX DESIGN</a></li>
+<!--                    <li><a href="">ETC</a></li>-->
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTECT</a></li>
+                </ul>
+            </div>
+
+            <!--서브웨이용 픽스헤더 자바스크립트 따로 짬-->
+            <script>
+                'use strict';
+
+                $(document).on('click', 'a[href="#"]', function(e) {
+                    e.preventDefault();
+                });
+
+
+                //상단으로 부드럽게
+                $(function() {
+                    $('.goTop').on('click', function() {
+                        $('html, body').animate({
+                            scrollTop: 0
+                        }, 100);
+                    });
+                });
+
+
+                //fixHeader
+                var scrollAni = 0;
+                scrollAni = $(document).scrollTop();
+                fixHeader();
+
+                //윈도우창 조절시 이벤트
+                $(window).on('scroll resize', function() {
+                    scrollAni = $(document).scrollTop();
+                    fixHeader();
+                });
+
+                //고정해더 함수 header(와이스튜디오)
+                function fixHeader() {
+                    if (scrollAni > 990) {
+                        $('header, .nav').addClass('on');
+                    } else {
+                        $('header, .nav').removeClass('on');
+                    }
+                };
+            </script>   
+            <!--서브웨이용 스크립트 픽스헤더-->   
+            
+        </header>
+        <!--header end -->
+
+        <!--subway-->
+        <section class="subway">
+            <div class="title">
+                <h3>SUBWAY APP</h3>
+                <p>서브웨이를 사용하는 고객들의 편라함을 위한 앱디자인 입니다<br>주문방식과 종류들을 한눈에 볼수있도록 제작했습니다 </p>
+                <p class="img"><img src="img/sub_iphone.png" alt=""></p>
+                <span>PACKAGE DESIGN</span>
+            </div>
+        </section>    
+            
+            <section class="sub_wrap">
+            <div class="txt">
+                <h3>SUBWAY</h3>
+                <span>서브웨이를 처음이용하는 사람들은 주문방식과<br> 순서를 어려워 하는
+                    고객들이 있습니다<br> 그런 불편함을 완화시켜주기위한 APP디자인 입니다</span>
+                <ul>
+                    <li><img src="img/sub_01.jpg" alt=""></li>
+                    <li><img src="img/sub_02.jpg" alt=""></li>
+                    <li><img src="img/sub_03.jpg" alt=""></li>
+                    <li><img src="img/sub_04.jpg" alt=""></li>
+                    <li><img src="img/sub_06-1.jpg" alt=""></li>
+                    <li><img src="img/sub_05.jpg" alt=""></li>
+                    <li><img src="img/sub_07-1.jpg" alt=""></li>
+                    <li><img src="img/sub_08.jpg" alt=""></li>
+                </ul>
+            </div>
+            <div class="color_chip">
+                <ul>
+                    <li><span>#1A4A10</span></li>
+                    <li><span>#F5C120</span></li>
+                    <li><span>#607E0C</span></li>
+                    <li>point color</li>
+                </ul>
+                <p>로그인을 함과 동시에 고객이 자주가는 매장과<br>
+                메뉴들을 저장하여 추천을 도와주고 주문의<br> 순서와
+                미리 주문을 할 수 있도록 구상했습니다</p>
+            </div>
+            
+            <div class="back">
+                   <a href="list.html"><span><i class="fa fa-angle-left" aria-hidden="true"></i></span>
+                    <p>BACK TO LIST</p>
+                </a>
+            </div>
+            </section>
+        
+<!--
+        <section class="another">
+                        <div class="color_chip">
+                <ul>
+                    <li><span>#1A4A10</span></li>
+                    <li><span>#F5C120</span></li>
+                    <li><span>#607E0C</span></li>
+                    <li>point color</li>
+                </ul>
+                <p>로그인을 함과 동시에 고객이 자주가는 매장과<br>
+                메뉴들을 저장하여 추천을 도와주고 주문의 순서와
+                <br>미리 주문을 할 수 있도록 구상했습니다</p>
+            </div>
+        </section>
+-->
+            
+    </div>
+</body>
+
+</html>

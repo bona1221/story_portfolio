@@ -1,0 +1,342 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Exo+2|Noto+Sans+KR&display=swap');
+
+@font-face { font-family: 'NanumSquareRound'; src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+/*reset*/
+
+*{margin: 0; padding: 0;}
+li {list-style: none;}
+
+a {color: inherit; text-decoration: none;}
+
+/*layout*/
+.en {font-family: 'NanumSquareRound';}
+.wrap{width: 100%; margin: 0 auto; background-color: #fff; }
+
+
+
+body {font-family: 'NanumSquareRound', sans-serif;}
+
+/*layout*/
+header {width: 100%; height: 72px; background-color: rgba(255, 255, 255, 0.81); position: fixed; 
+z-index: 200;}
+header .innerHeader {width: 1070px; height: 100%; overflow: hidden; margin: 0 auto; position: relative;}
+header .innerHeader .logo {float: left;}
+header .innerHeader .logo a {display: block; width: 100%; height: 100%;}
+header .innerHeader .logo a img {width: 50%; height: 100%;}
+/*gnb*/
+header .innerHeader .gnb {float: left; left: 30%; position: absolute;}
+header .innerHeader .gnb li {float: left; padding:24px 30px;}
+header .innerHeader .gnb li a {display: block; width: 100%; height: 200%; font-size: 18px;
+color: #1cbaba;}
+header .innerHeader .gnb li a:hover .innerHeader .gnb li a:focus {color: #119e9e;}
+/*tnb*/
+header .innerHeader .tnb {float: right; margin-right: 50px; margin-top: 15px;}  
+header .innerHeader .tnb a {display: block; font-size: 14px; width: 100%;
+text-align: center; color: #1cbaba; font-size: 16px; padding: 10px 10px; border: 1px solid #1cbaba; border-radius: 30px; position: relative; overflow: hidden; z-index: 500; }
+header .innerHeader .tnb a:after {content: ''; position: absolute; left: 0; top: 0; width: 0%; height: 100%; }
+header .innerHeader .tnb a:hover:after {position: absolute; background: rgba(28, 186, 186, 0.35); transition: all 0.3s; width: 100%;}
+header .innerHeader .tnb .menu {color: red; float: right;}
+
+
+/*햄버거바*/
+header .gnbMo {font-size: 35px; display: none; position: absolute; top: 20%; color: #1cbaba;}
+
+
+
+/*make*/
+.make{position: relative; margin: 0 auto; width: 100%; height: 100vh;}
+.make img{position: absolute; left: 50%; transform: translateX(-50%);}
+.make span{font-weight: bold;}
+.make h2{font-size: 30px; position: absolute; left: 15%; top: 15%; z-index: 100;}
+.make span{font-weight:bold;}
+.make p{text-align: center; line-height: 2; font-size: 17px; position:absolute; top: 95%; left: 25%;
+transform: translateX(10%);}
+.make .top{position: absolute; width: 60%; margin-top:3%;}
+.make .middlelogo{position: absolute; top: 350px; left: 80%; width: 23%;}
+.make .mission{width: 45%; position: absolute; top: 66%;}
+
+/*trust*/
+.trust {width: 100%; height: 85%; background-color: rgba(101, 155, 195, 0.21); margin-top: 15%; position: relative;}
+.trust h2{font-size: 30px; position: absolute; left: 23%; margin-top: 40px;}
+.trust .main {font-size: 15px; font-weight: bold; line-height: 1.7; position: absolute; left: 23%; top:20%;}
+.trust img{width: 45%;  position: absolute;  bottom: 10%; left: 13%;}
+/*.trust .img{width: 10%;}*/
+.trust .toplist{position: absolute; left: 60%; font-size: 16px; line-height: 1.9; }
+.trust .toplist .numbering{margin-top: 20px;}
+.trust .toplist h4 {font-size: 20px; margin-top: 25px; }
+.trust .toplist h4 > span {color: #119e9e;}
+.trust .toplist span{font-weight: bold; margin-right: 10px; color: #119e9e;}
+
+/*bottomlist*/
+
+.bottomlist {margin-top: 22%}
+.trustimg{position: absolute; width: 10%;}
+.trust .bottomlist{position: absolute; left: 60%; font-size: 16px; line-height: 1.9; }
+.trust .bottomlist .numbering{}
+.trust .bottomlist h4 {font-size: 20px; margin-bottom: 20px; }
+.trust .bottomlist h4 > span {color: #119e9e;}
+.trust .bottomlist span{font-weight: bold; margin-right: 10px; color: #119e9e;}
+/*.trust .banner{display: block; bottom: 38%; left: 45%;}*/
+.trust .banner img{ width: 40%; z-index: 1; left: 30%; bottom: -16%}
+
+/*vison*/
+.vison{position: relative; width: 100%; height: 70vh; padding: 50px 0px; }
+.vison h2{position: absolute; top: 22%; left: 25%;}
+.vison .flatfome{top: 40%; position: absolute; color: #000; left: 25%;
+margin-top: 15px;}
+.vison .img li{ float: left;}
+.vison .img li img{width: 50%;}
+
+
+
+/*flatfome*/
+.vison .flatfome{position: relative''}
+.vison .flatfome h2{}
+.vison .flatfome h4{font-weight: bold; font-size: 17px; width: 390px;
+position: absolute; top: -85px;}
+.vison .flatfome p{color: #000; font-size: 16px; line-height:1.7; position: absolute;
+width: 500px;}
+.vison .flatfome h4{font-weight: bold; color: #000; margin-bottom: 20px;}
+.vison .flatfome .c-119e9e{color: #1cbaba;}
+.vison .flatfome .vision_text{font-size: 17px; position: absolute; top:-50px;}
+.vison .flatfome .vision_text span{color: #1cbaba; font-weight: bold;}
+
+.vison .mission{position: relative; width: 100%; height: 600px; 
+display: inline-block;}
+.vison .mission .img{position: absolute; bottom: -15%; display: inline-block; left: 35%;
+top: 85%}
+.vison .mission .img li{width: 450px; display: inline-block;}
+.vison .mission .img li img{width: 100%; transform: translate(-40%,-70%);}
+.vison .mission .img li p{font-weight: bold; position: absolute; 
+top: 52%;}
+
+.vison .mission .grow{width: 60%; display: inline-block; position: relative;
+top: 125%; left: 20%;}
+.vison .mission .grow p{text-align: center; font-size: 15px; line-height: 1.7;
+position: absolute; left: 20%; bottom: 30px;}
+
+/*point*/
+.point{width: 100%; height: 80vh; color: #000; display: inline-block; position: relative;
+background-color: rgba(255, 203, 253, 0.32);}
+.point h2{font-size: 30px; position: absolute; left: 23%; top: 200px;}
+.point p{position: absolute; font-size: 15px; line-height: 2; left: 23%; top: 300px;}
+.point span{color: #1cbaba; font-weight: bold;}
+
+
+/*footer*/
+footer.footer {
+  padding: 32px;
+  border-top: 1px solid #979797;
+  max-height: 216px;
+  margin-top: 7%;
+	
+}
+footer.footer .footer__logo {
+  width: 10px;
+  height: 3px;
+  
+
+/*  background: url('/static/images/common/ic-logo-footer.png') no-repeat center transparent;*/
+  background-size: cover;
+  text-indent: -9999px;
+}
+footer.footer .footer__info {
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+
+  margin-top: 4px;
+}
+footer.footer .footer__info * {
+  letter-spacing: normal;
+}
+footer.footer .footer__info:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+footer.footer .footer__info .footer__info--detail {
+  float: left;
+}
+footer.footer .footer__info .footer__info--detail ul.representation-m {
+  margin-bottom: 25px;
+}
+footer.footer .footer__info .footer__info--detail ul:first-child {
+  margin-bottom: 12px;
+}
+footer.footer .footer__info .footer__info--detail ul li {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+}
+footer.footer .footer__info .footer__info--detail ul li span {
+  color: #666666;
+  margin-right: 10px;
+}
+footer.footer .footer__info .footer__info--detail ul li a {
+  font-weight: 700;
+}
+footer.footer .footer__info .footer__info--detail ul li:after {
+  content: '';
+  width: 1px;
+  height: 10px;
+  background-color: #cdcdcd;
+  display: inline-block;
+  margin: 0 20px;
+}
+footer.footer .footer__info .footer__info--detail ul li:last-child:after {
+  display: none;
+}
+footer.footer .footer__info .footer__info--detail p {
+  margin: 26px 0 0;
+  text-transform: uppercase;
+}
+footer.footer .footer__info .footer__info--sns {
+  /* margin-left: auto; */
+  float: right;
+  margin: 50px;0px;
+}
+footer.footer .footer__info .footer__info--sns ul li {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 30px;
+}
+footer.footer .footer__info .footer__info--sns ul li:last-child {
+  margin-right: 0;
+}
+footer.footer .footer__info .footer__info--sns ul li a {
+  color: #222222;
+}
+@media (max-width: 767px) {
+  footer.footer {
+    padding: 32px 0 46px;
+  }
+  footer.footer .footer__logo {
+    margin: 0 auto;
+  }
+  footer.footer .footer__info {
+    text-align: center;
+  }
+  footer.footer .footer__info .footer__info--detail {
+    float: none;
+  }
+  footer.footer .footer__info .footer__info--detail ul:nth-child(1) li {
+    display: block;
+    margin-bottom: 12px;
+  }
+  footer.footer .footer__info .footer__info--detail ul:nth-child(1) li:last-child {
+    margin-bottom: 0;
+  }
+  footer.footer .footer__info .footer__info--detail ul:nth-child(1) li:after {
+    display: none;
+  }
+  footer.footer .footer__info .footer__info--sns {
+    display: none;
+  }
+  footer.footer .footer__info .footer__info--detail p {
+    font-size: 10px;
+    color: #666666;
+    letter-spacing: normal;
+  }
+}
+@media (max-width: 340px) {
+  footer.footer .footer__info .footer__info--detail ul li:after {
+    margin: 0 10px;
+  }
+}
+
+
+
+
+/*반응형*/
+
+/*1024*/
+@media screen and (max-width:1024px){
+	header .innerHeader {width: 95%; min-width: 90%; position: relative;
+    background-color: rgba(255, 180, 180, 0.49);}
+    header .innerHeader .gnb,header .innerHeader .tnb {display: none;}
+	header .innerHeader h1.logo img{width: 60px;}
+	header .gnbMo {display: block; position: absolute; right: 5%;}
+    
+/*    section.make{background-color: #e68d8d; }*/
+    section.make .top{margin:-1px; width: 100%;}
+    section.make h2{left: 6%; top: 20%}
+    section.make .middlelogo{width: 35%; top: 370px;}
+    section.make p{left: 12%;}
+    section.make .mission{top: 76%; width: 55%;}
+    section.trust{margin-top: 27%; position: relative;}
+    section.trust h2{left: 10%;}
+    section.trust .main{left: 10%; top: 23%;}
+    section.trust img{width: 50%; left: -5%;}
+    section.trust .toplist h4{margin-left: -40%;}
+    section.trust .toplist .numbering{line-height: 1.7;
+    margin-left: -40%; font-size: 15px;}
+    section.trust h3{position: absolute; left:0%;
+    position: absolute; top: -24%;}
+    section.trust .bottomlist{line-height: 1.; margin-left: -40%; font-size: 15px; position: absolute; left: 84%; top: 17%; font-size: 15px;}
+    section.trust .banner img{width: 65%; left: 20%; right: -50%; transform: translate(-50% -50%); margin-bottom: -6%;}
+    section.vison h2{left:20%; top: 31%;}
+    section.vison .flatfome .vision_text{font-size: 14px; left: -50px; 
+    top: 20px; }
+    section.vison .flatfome h4{left: -50px; top: -20px;}
+    section.vison .mission ul.img{ display: inline-block; 
+    background-color: red;}
+    section.vison .mission .img li p{top: 110px;}
+
+
+    }
+    
+    
+    /* 768*/
+@media screen and (max-width:1024px){
+    section.make{position: relative;}
+    section.make .middlelogo{width: 40%; position: absolute; left: 75%; 
+   top: 295px;}
+    section.make .mission{width: 70%; top: 57%;}
+    section.trust{margin-top: 13%; }
+    
+    section.make p{font-size: 16px; left: 7%; margin-top: -14%;}
+    section.trust{width: 100%; height: 60%;}
+    section.trust h2{margin: 20px 0px; }
+    
+    
+    
+    
+    section.vison .mission .img{left: 0; display: inline-block;}
+    section.vison .mission .grow p{left: 0; margin-bottom: 32%;}
+/*
+    .vison .mission .img li img:nth-child(1){position: absolute;
+    left: 70%; width: 45%;}
+    .vison .mission .img li img:nth-child(2){position: absolute;
+    left: 20%;}
+*/
+    footer{display: none;}
+}
+
+/*768*/
+@media screen and (max-width:768px){
+    section.make p{left: 4%;}
+    section.make h2{left: 8%; font-size: 24px;}
+    section.trust{width: 100%; height: 50%; position: relative;}
+    .trust .toplist{position: relative;}
+    section.trust .toplist h4{position: absolute; top: 350px; left: -10%;}
+    section.trust .toplist ul.numbering{background-color: aquamarine;
+    position: absolute; top: 410px; left: -10%; line-height: 2;}
+    
+    section.trust .bottomlist h3{top: 450px;
+    left: -90%; background-color: #eb0000; z-index: 15;}
+    section.trust .bottomlist .numbering{position: absolute; top: 190px;
+    background-color: blue; left: -55%;}
+
+
+    
+    
+    
+    section.trust .banner img{display: none;}
+}

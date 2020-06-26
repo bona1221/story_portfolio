@@ -1,0 +1,92 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,700&display=swap'); 
+
+/*reset*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, tbody, tfoot, thead, tr, th, td {margin:0;padding:0;}
+* {margin: 0; padding: 0;}
+a {color:inherit; text-decoration: inherit;}
+li {list-style: none;}
+address, em, i { font-style: normal;}
+h1, h2, h3, h4, h5,h6 {font-size: inherit;}
+a:hover { text-decoration: none; color:inherit;}
+
+/*layout*/
+body{font-family: 'Noto Sans KR', sans-serif; font-size: 15px;}
+.wrap {width: 100%; margin: 0 auto;}
+section{width: 1400px;}
+
+/*ystudio*/
+.ystudio{width: 100%; height: 100vh; margin: 0 auto;}
+.ystudio .ystudio_list{position: relative;height: 100vh;}
+.ystudio .ystudio_list .img{width: 50%; height: 100%; left: 0; top: 0;
+background: #222222; }
+.ystudio .ystudio_list .img img{width: 50%; position: absolute; top: 29%; left: 0;}
+.ystudio .ystudio_list .slideup {box-shadow:  5px 5px 25px rgba(128, 128, 128, 0.16); width: 35%; height: 56%; position: relative; left: 57%; top: -77%; border-radius: 20px;  background: #fff;}
+.ystudio .ystudio_list .slideup:before{content: ''; background: #f1f1f1; position: absolute; width: 100%; height: 100%; left: 4%; z-index: -1; border-radius: 20px; top: 5%;}
+.ystudio .ystudio_list .slideup .txt{position: absolute; top: 65%; transform: translateY(-50%); margin-left: 400px;
+width: 100%; height: 100%;}
+.ystudio .ystudio_list .slideup .txt span{color: #aaaaaa;  position:absolute; left: -57%; top: -21%;}
+.ystudio .ystudio_list .slideup .txt h2{font-size: 30px; position: absolute;
+left: -50%; top:45px; border-bottom: 1px solid #555;
+animation-name: slide-up; animation-duration: 1.4s;}
+@keyframes slide-up{
+    0%{opacity: 0;  top:75%;}
+    30%{opacity: 0;  top:70%;}  
+   100%{opacity: 1;  top:45px;}
+}
+.ystudio .ystudio_list .slideup .txt p{font-size: 15px;position: absolute;
+left: -330px; top: 115px; line-height: 1.9;
+animation-name: story; animation-duration: 1.7s;
+}
+@keyframes story{
+    0%{opacity: 0; top: 70%;}
+    30%{opacity: 0; top: 60%;}
+    50%{opacity: 0; top: 90%;}
+    100%{opacity: 1; top: 120px;}
+}
+.ystudio .ystudio_list .slideup .txt .color h3{font-size: 16px; position: absolute; left: -320px; top: 34%;
+animation-name: point; animation-duration: 2.7s;}
+@keyframes point{
+    0%{opacity: 0;}
+    30%{opacity: 0;}
+    50%{opacity: 0;}
+    100%{opacity: 1;}
+}
+.ystudio .ystudio_list .slideup.txt .color{position: relative; animation-name: point2; animation-duration: 2.4s; width: 100%; height: 50px; background: #000;}
+@keyframes point2{
+    0%{opacity: 0; top: 80%;}
+    50%{opacity: 0; top: 70%;}
+    100%{opacity: 1; top: 55%;}
+}
+.ystudio .ystudio_list .slideup .txt .color ul{position: relative;
+animation-name: point3; animation-duration: 3s;}
+@keyframes point3{
+    0%{opacity: 0; top: 70%;}
+    50%{opacity: 0; top: 75%;}
+    100%{opacity: 1; top: 60%;}
+}
+.ystudio .ystudio_list .slideup .txt .color ul li:nth-child(1){position: absolute; left: -50%; top: 230px;}
+.ystudio .ystudio_list .slideup .txt ul li:nth-child(1):before{content: ''; width: 22px; height: 22px; position: absolute; margin-left: -18%; 
+border-radius: 50%; background: #FFEC02; left: 20%;}
+.ystudio .ystudio_list .slideup .txt ul li:nth-child(2){position: absolute; left: -29%; top: 230px;}
+.ystudio .ystudio_list .txt ul li:nth-child(2):before{content: ''; width: 22px; height: 22px; position: absolute; border-radius: 50%; left: 2%; background: #222222;}
+
+.ystudio .ystudio_list ul{position: relative; left: -6 0%; top: 65%;}
+.ystudio .ystudio_list li{position: absolute; padding: 0 52px; font-size: 14px;
+width: 100%;}
+
+
+.ystudio .ystudio_list .btnStart{display: inline-block; position: absolute; left:70%; top: 67%; width: 150px; height: 45px; border-radius: 200px; border: 1px solid #8b8b8b; background: #fff; box-sizing: border-box;}
+.ystudio .ystudio_list .btnStart:hover{background: #555; transition: all 0.3s; border: none; color: #fff;}
+.ystudio .ystudio_list .btnStart .text p{position: absolute; left: 17px;
+top: 10px; color: #555;}
+.ystudio .ystudio_list .btnStart:hover .text p:hover{border: none; color: #fff;}
+
+.ystudio .ystudio_list .btnStart .text{position: relative; left: 15%; top: 22%; font-size: 13px; font-weight:bold;}
+.ystudio .ystudio_list .btnStart .mask{position: absolute; top: 0;width: 0; display: block; height: 100%; border-radius: 200px;}
+.ystudio .ystudio_list .btnStart:hover{background: #b1b1b1;  transition: all 0.3s; border: none;}
+.ystudio .ystudio_list .btnStart:hover .text{color: #fff;}
+.ystudio .ystudio_list .back{position: absolute; right: 0; margin-right: 90px; bottom: 0; margin-bottom: 60px; font-size: 15px; color: #646464;
+font-weight: 600; opacity: 0.5;}
+.ystudio .ystudio_list .back:hover {opacity: 0.8;}
+.ystudio .ystudio_list a i{font-size: 45px; position: absolute; left: -25px; top: -12px;}

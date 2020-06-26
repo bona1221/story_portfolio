@@ -1,0 +1,237 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,700&display=swap'); 
+
+/*reset*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, tbody, tfoot, thead, tr, th, td {margin:0;padding:0;}
+* {margin: 0; padding: 0;}
+a {color:inherit; text-decoration: inherit;}
+li {list-style: none;}
+address, em, i { font-style: normal;}
+h1, h2, h3, h4, h5,h6 {font-size: inherit;}
+a:hover { text-decoration: none;}
+
+/*layout*/
+body{font-family: 'Noto Sans KR', sans-serif; font-size: 15px;
+}
+.wrap {width: 100%; margin: 0 auto;}
+section{width: 1400px;  height:100vh;}
+#webgallery{height:160vh;}
+
+
+
+/*.link-proyecto_cont*/
+
+/*webgallery*/
+#webgallery{margin: 0 auto;}
+#webgallery .web_list{position: relative;
+animation-name: list; animation-duration: 2s; }
+@keyframes list{
+    0%{opacity: 0;}
+    30%{opacity: 0;}  
+   100%{opacity: 1; }
+}
+
+
+
+/*id aside 사이드바*/
+#aside {position: absolute; right: 30px; top: 150px; width: 90px; height: 300px; border-radius: 32px; transition: top 0.3s; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
+#aside .icon{font-size: 30px; color: #999; text-align: center; margin-top: 30px;}
+#aside .icon li{margin: 20px 0;}
+#aside .icon li:hover{color: #9d73f8; transition: all 0.3s;}
+#aside .icon li p{font-size: 15px;}
+#aside .icon li:nth-child(3){position: relative;}
+#aside .icon li .inner{font-size: 17px; position: absolute; right: 40px; top: -7px; padding: 1px 70px; border-radius: 10px;
+box-sizing: border-box;
+opacity: 0;
+}z
+#aside .icon li .inner p{font-size: 16px; animation-name: inner; 
+animation-duration: }
+/*#aside .icon li .inner p:hover{}*/
+#aside .icon li .inner li:first-child a p{margin-right: 15px;}
+#aside .icon li .inner li:last-child a p{margin-top: -15px;}
+#aside .icon li .inner.on{opacity: 1;}
+
+
+
+#webgallery .web_list:before{content: ''; position: absolute; width: 2px; height: 50%; background: #d1d1d1; bottom: 3%; transform: rotate(90deg); margin-left: 50%;}
+#webgallery .web_list ul{overflow: hidden; padding: 8% 7%; box-sizing: border-box;}
+#webgallery .web_list ul li{width: 100%; height: auto; box-sizing: border-box; padding: 0 5%; margin-top: 10%;}
+#webgallery .tit{position: absolute; left: 0; right: 0; bottom: 0;
+display: block; padding: 5px 22px; background: #fff; transition: all 500ms;}
+#webgallery .tit p{margin: 7px 0 0; color: #292929;}
+
+
+/*whawhae*/
+#webgallery .web_list .whawhae{position: relative; width: 510px; height: 360px;
+display: block; overflow: hidden; background: #cbeded;
+border-top-left-radius: 30px; box-shadow: 0px 5px 8px 2px rgba(204, 204, 204, 0.62);}
+#webgallery .web_list .whawhae .tit_img{width: 100%; margin: auto; position: relative;}
+#webgallery .web_list .whawhae .tit_img img{width: 110%; position: absolute; left: -5%; top: -3px;}
+#webgallery .web_list .brand_story{display: block; padding-top: 10px; width: 50%;
+overflow: hidden;  margin-right: 50%; color: #838383;}
+
+/*whyshudio*/
+#webgallery .web_list .whyshudio{position: relative; width: 510px; height: 360px;
+display: block; overflow: hidden; float: right; border-top-right-radius: 30px; bottom: 480px; box-shadow: -1px 5px 8px 2px rgba(204, 204, 204, 0.62);}
+#webgallery .web_list .whyshudio .tit_img{width: 110%; position: relative;}
+#webgallery .web_list .whyshudio .tit_img img{position: absolute; width: 100%;}
+
+
+/*korea*/
+#webgallery .web_list .korea{position: relative; width: 510px; height: 360px;
+box-shadow: 0px 5px 8px 2px rgba(204, 204, 204, 0.62);
+display: block; overflow: hidden; background: linear-gradient(#a3b8ff, rgba(230, 200, 255, 0.81))fixed;
+border-top-left-radius: 30px; bottom: 50px;}
+#webgallery .web_list .korea .tit_img{width: 100%; margin: auto;}
+#webgallery .web_list .korea .tit_img img{width: 65%; margin-left: 90px;}
+#webgallery .web_list .brand_story{display: block; padding-top: 10px; width: 50%;
+overflow: hidden;  margin-right: 50%;}
+
+/*hanhwa*/
+#webgallery .web_list .hanhwa{position: relative; width: 510px; height: 360px; bottom: 526px;
+box-shadow: -1px 5px 8px 2px rgba(204, 204, 204, 0.62);    
+display: block; background: linear-gradient(rgb(177, 154, 252),#ffefdc)fixed;
+border-top-right-radius: 30px; float: right;}
+#webgallery .web_list .hanhwa .tit_img{width: 100%; margin: auto; position: relative;}
+#webgallery .web_list .hanhwa .tit_img img{width: 105%; position: absolute; left:-10px; top: -50px;}
+#webgallery .web_list .brand_story{display: block; padding-top: 10px; width: 50%;
+overflow: hidden;  margin-right: 50%;}
+
+/*nike*/
+#webgallery .web_list .nike{box-shadow: 0px 5px 8px 2px rgba(204, 204, 204, 0.62); bottom: 79px; 
+position: relative; width: 510px; height: 360px;
+display: block; overflow: hidden; 
+border-top-left-radius: 30px;}
+#webgallery .web_list .nike .tit_img{width: 100%; margin: auto; position: relative;}
+#webgallery .web_list .nike .tit_img img{width:130%; position: absolute; left:-5%;
+top: 20; overflow: hidden;}
+#webgallery .web_list .brand_story{display: block; padding-top: 10px; width: 50%;
+overflow: hidden;  margin-right: 50%;}
+
+/*debang*/
+#webgallery .web_list .debang{position: relative; width: 510px; height: 360px; overflow: hidden;
+display: block; background:#f1f1f1; box-shadow: -1px 5px 8px 2px rgba(204, 204, 204, 0.62);
+border-top-right-radius: 30px; bottom: 560px; float: right;}
+#webgallery .web_list .debang .tit_img{width: 100%; margin: auto; position: relative; }
+#webgallery .web_list .debang .tit_img img{width: 100%; position: absolute;}
+#webgallery .web_list .brand_story{display: block; padding-top: 10px; width: 50%; margin-right: 50%;}
+
+
+
+
+
+/*----------------------------------------------------------------------------------------------*/
+
+/*package_gallery*/
+#package_gallery{margin: 0 auto; padding: 5% 0;box-sizing: border-box; height: 50vh;}
+#package_gallery .package{position: relative;}
+#package_gallery .package:before{content: ''; position: absolute; width: 2px; height: 250%; background: #d1d1d1; 
+margin-left: 50%; z-index: 10; bottom: -561px; z-index: 200;
+transform: rotate(90deg); color: red;}
+#package_gallery ul{overflow: hidden; padding:2% 7%;
+box-sizing: border-box; margin-top: -70px; position: relative;}
+#package_gallery ul li{height: auto; box-sizing: border-box; padding: 0 5%; position: relative;}
+#package_gallery .tit{position: absolute; left: 0; right: 0; bottom: 0; display: block; padding: 5px 22px;  background: #fff; transition: all 500ms; text-decoration: none;}
+#package_gallery .tit p{margin: 7px 0 0; color: #292929;}
+#package_gallery .tit span{color: #999;}
+#package_gallery .tit .brand_story{display: block; padding-top: 10px; width: 50%; overflow: hidden;
+margin-right: 50%;}
+
+#package_gallery .blooming{float: left; width: 510px; height: 360px; display: block; overflow: hidden; 
+background: linear-gradient(rgba(227,227,227,1) 0%, rgba(255,255,255,1) 100%); border-top-left-radius:30px;
+box-shadow: 0px 5px 8px 2px rgba(204, 204, 204, 0.62);
+position: relative;}
+#package_gallery .blooming .tit_img{width: 100%; margin: auto;}
+#package_gallery .blooming .tit_img img{width: 75%; position: absolute; left: 20px; top: 20px;}
+#package_gallery .blooming .tit .brand_story{
+/*
+-webkit-transition: all 500ms eae;
+transition: all 500ms ease;
+*/
+}
+
+
+/*child*/
+#package_gallery .child{position: relative; 480px; width: 510px; height: 360px;float: right;
+box-shadow: -1px 5px 8px 2px rgba(204, 204, 204, 0.62); display: block; overflow: hidden; background: linear-gradient(rgb(255, 218, 218) 0%, rgba(255,255,255,1) 100%)fixed; border-top-right-radius: 30px;}
+#package_gallery .child .tit_img{width: 100%; position: relative;}
+#package_gallery .child .tit_img img{position: absolute; width: 85%; left: 5%}
+#package_gallery .tit .child .brand_story{display: block; width: 50%; overflow: hidden;  margin-right: 50%;}
+
+
+
+/*-----------------------------------------------------------------------------------*/
+
+/*ulux_gallery*/
+#ulux_gallery{margin: 0 auto; height: 54vh; position: relative; margin-top: 5px}
+#ulux_gallery:before{content: ''; width: 2%; height: 50%; color: red;}
+#ulux_gallery ul{padding: 7% 9%; box-sizing: border-box; margin-bottom: -3%; margin-top: -40px
+}
+#ulux_gallery ul li{padding:  0 3%;}
+#ulux_gallery .tit{position: absolute; left: 0; right: 0; bottom: 0; display: block; padding: 5px 22px;  background: #fff; transition: all 500ms; text-decoration: none;}
+#ulux_gallery .tit p{color: #292929; display: block; margin-top: 15px;}
+#ulux_gallery .tit span{color: #999; }
+#ulux_gallery .tit .brand_story{display: block; padding-top: 12px; width: 50%; overflow: hidden; margin-right: 50%;}
+
+/*subway*/
+#ulux_gallery .subway{position: relative; float: left; width: 510px; height: 360px; display: block; 
+overflow: hidden; background:#d9d9d9; border-top-left-radius:30px; box-shadow: 0px 5px 8px 2px rgba(204, 204, 204, 0.62);}
+#ulux_gallery .subway .tit_img{width: 100%; margin: auto; position: relative;}
+#ulux_gallery .subway .tit_img img{width: 110%; left: -25px; top:-60px; position: absolute;}
+#ulux_gallery .subway .brand_story{ width: 50%; overflow: hidden;}
+#ulux_gallery .subway .brand_story p{position: absolute; margin-top: 10px; top: 20%;}
+
+/*glow*/
+#ulux_gallery .glow{position: relative; 480px; width: 510px; height: 360px; float: right;
+box-shadow: -1px 5px 8px 2px rgba(204, 204, 204, 0.62); display: block; overflow: hidden; background: linear-gradient(rgb(255, 218, 218) 0%, rgba(255,255,255,1) 100%)fixed; border-top-right-radius: 30px;}
+#ulux_gallery .glow .tit_img{width: 100%; position: relative;}
+#ulux_gallery .glow .tit_img img{position: absolute; width: 100%;}
+#ulux_gallery .glow .brand_story{ width: 50%; overflow: hidden;  margin-right: 50%;}
+
+
+/*.etc_gallery*/
+.etc_gallery {width: 100%; margin-top: -30%; }
+.etc_gallery ul{padding: 0% 20%; box-sizing: border-box; box-sizing: border-box; }
+.etc_gallery ul li{width: 100%; height: auto; box-sizing: border-box; padding: 0 5%;  display: block;}
+.etc_gallery .tit{padding: 5px 22px; background: #fff; transition: all 500ms; text-decoration: none; position: absolute; left: 0; right: 0; bottom: 0;}
+.etc_gallery .tit p{margin: 7px 0 0; color: #292929;}
+.etc_gallery .brand_story{color: #999;}
+
+/*poster*/
+.etc_gallery .poster{position: relative; width: 480px; height: 360px;
+display: block; background: #ff9494; border-top-left-radius: 30px; box-shadow: 0px 5px 8px 2px rgba(204, 204, 204, 0.62); float: left;} 
+.etc_gallery .poster .tit_img{width: 100%;}
+.etc_gallery .poster .tit_img img{width: 480px; height:  360px; }
+.etc_gallery .poster .brand_story{padding-top: 10px;}
+
+/*blooming_poster*/
+.etc_gallery .blooming_poster{position: relative; width: 480px; height: 360px; float: right; 
+box-shadow: -1px 5px 8px 2px rgba(204, 204, 204, 0.62); border-top-right-radius: 30px; background: #fff2f2;}
+.etc_gallery .blooming_poster .tit_img{width: 100%; height: 360px; overflow: hidden; position: relative;}
+.etc_gallery .blooming_poster .tit_img img{width: 100%; position: absolute; top: -7%; left: 20%;}
+
+/*typo*/
+.etc_gallery .typo{position: relative; width: 480px; height: 360px;
+box-shadow: 0px 5px 8px 2px rgba(204, 204, 204, 0.62);
+display: block; overflow: hidden; 
+/*background: linear-gradient(#a3b8ff, rgba(222, 222, 222, 0.81))fixed;*/
+background: #f1f1f1;    
+border-top-left-radius: 30px; margin-top: 50px; float: left;}
+.etc_gallery .typo .tit_img{width: 75%; margin: auto; position: relative;}
+.etc_gallery .typo .tit_img img{width: 65%; position: absolute; left:18%; top: 10px;
+box-shadow: 0px 5px 8px 2px rgba(204, 204, 204, 0.62); border-radius: 5px}
+.etc_gallery .brand_story{display: block; padding-top: 10px; width: 50%;
+overflow: hidden;  margin-right: 50%;}
+
+/*logo*/
+.etc_gallery .logo{position: relative; width: 480px; height: 360px; background: #f1f1f1; float: right; margin-top: 5%; 
+box-shadow: -1px 5px 8px 2px rgba(204, 204, 204, 0.62); display: block; border-top-right-radius: 30px;}
+.etc_gallery .logo .tit_img{width: 50%; overflow: hidden; 
+background: #000;}
+.etc_gallery .logo .tit_img img{width: 100%;}
+
+
+
+
+
+

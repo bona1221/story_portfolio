@@ -1,0 +1,225 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Exo+2|Noto+Sans+KR&display=swap');
+
+@font-face { font-family: 'NanumSquareRound'; src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+/*reset*/
+
+*{margin: 0; padding: 0;}
+li {list-style: none;}
+
+a {color: inherit; text-decoration: none;}
+
+/*layout*/
+.en {font-family: 'NanumSquareRound';}
+.wrap{width: 100%; margin: 0 auto; background-color: #fff; }
+
+
+
+body {font-family: 'NanumSquareRound', sans-serif;}
+
+/*layout*/
+header {width: 100%; height: 72px; background-color: rgba(255, 255, 255, 0.81); position: fixed; 
+z-index: 200;}
+header .innerHeader {width: 1070px; height: 100%; overflow: hidden; margin: 0 auto; position: relative;}
+header .innerHeader .logo {float: left;}
+header .innerHeader .logo a {display: block; width: 100%; height: 100%;}
+header .innerHeader .logo a img {width: 50%; height: 100%;}
+/*gnb*/
+header .innerHeader .gnb {float: left; left: 30%; position: absolute;}
+header .innerHeader .gnb li {float: left; padding:24px 30px;}
+header .innerHeader .gnb li a {display: block; width: 100%; height: 200%; font-size: 18px;
+color: #1cbaba;}
+header .innerHeader .gnb li a:hover .innerHeader .gnb li a:focus {color: #119e9e;}
+/*tnb*/
+header .innerHeader .tnb {float: right; margin-right: 50px; margin-top: 15px;}  
+header .innerHeader .tnb a {display: block; font-size: 14px; width: 100%;
+text-align: center; color: #1cbaba; font-size: 16px; padding: 10px 10px; border: 1px solid #1cbaba; border-radius: 30px; position: relative; overflow: hidden; z-index: 500; }
+header .innerHeader .tnb a:after {content: ''; position: absolute; left: 0; top: 0; width: 0%; height: 100%; }
+header .innerHeader .tnb a:hover:after {position: absolute; background: rgba(28, 186, 186, 0.35); transition: all 0.3s; width: 100%;}
+header .innerHeader .tnb .menu {color: red; float: right;}
+
+/*gallery*/
+.gallery {width: 100%; color: #000; text-align: center; padding: 50px 0; overflow: hidden; position: relative; top: 100px; background-color:rgba(198, 198, 198, 0.21) }
+.gallery .text{font-size:15px; line-height: 1.8;}
+.gallery h3{font-size: 20px; position: absolute; left: 26%; top: 36%; }
+.gallery  h2 {font-size: 30px; color: #000; margin-bottom: 20px; letter-spacing: 2px;
+margin-bottom: 15px; display: block;margin-right: 42%; }
+.gallery h2 span{color: #1cbaba;}
+.gallery p span{color: #1cbaba; font-weight: bold;}
+.gallery > p {font-size: 16px; color: #000; position: absolute; left: 26%;
+text-align:justify}
+.gallery p{margin-bottom: 15px; font-size: 13px; margin-right: 15px;}
+.gallery ul {overflow: hidden; padding: 85px 40px 30px; margin: 0 23%; position: relative;
+margin-top: 5%;}
+.gallery ul li {float: left; width: 25%; height: 160px;
+box-sizing: border-box; background-color: #fff; border-radius: 10px; margin: 6px;  border: 1px solid #d6d6d6; }
+.gallery ul li:hover{transition: all 0.2s; font-weight: bold; box-shadow: 3px 3px 12px #cbcbcb;}
+.gallery ul li a p:last-child{margin-left: 20px; margin-top: -12px;}
+.gallery ul li h4{font-size: 20px; margin-bottom: 30px; margin-top: 13px;}
+.gallery ul li p.img{position: absolute; display: block;}
+.gallery ul li p.img img{width: 60%; left: 50%; top: 50%; transform: translate(40%, 15%);}
+.gallery ul li p.img img:last-child{width: 58%;}
+
+/*gallerytogether*/
+.gallerytogether {width: 100%; color: #000; text-align: center; padding: 50px 0; overflow: hidden; position: relative; top: 100px; background-color:rgba(198, 198, 198, 0.21) }
+.gallerytogether .text{font-size:15px; line-height: 1.8;}
+.gallerytogether h3{font-size: 20px; position: absolute; left: 26%; top: 2%; }
+.gallerytogether  h2 {font-size: 30px; color: #000; margin-bottom: 20px; letter-spacing: 2px;
+margin-bottom: 15px; display: block;margin-right: 42%; }
+.gallerytogether > p {font-size: 16px; color: #000; position: absolute; left: 26%;
+text-align:justify}
+.gallerytogether{margin-bottom: 15px; font-size: 13px; margin-right: 15px;}
+.gallerytogether ul{overflow: hidden; padding: 0px 40px 30px; margin: 0 23%; 
+position: relative; }
+.gallerytogether li {float: left; width: 25%; height: 160px;
+box-sizing: border-box; background-color: #fff; border-radius: 10px; margin: 6px;  border: 1px solid #d6d6d6; }
+.gallerytogether li:hover{transition: all 0.2s; font-weight: bold; box-shadow: 3px 3px 12px #cbcbcb;}
+.gallerytogether li a p:last-child{margin-left: 20px; margin-top: -12px;}
+.gallerytogether li h4{font-size: 20px; margin-bottom: 30px; margin-top: 13px;}
+.gallerytogether li p.img{position: absolute; display: block;}
+.gallerytogether li p.img img{width: 60%; left: 50%; top: 50%; transform: translate(40%, 15%);}
+
+/*imgload*/
+.imgload{width: 100%; position: relative; margin: 10% 0px;}
+.imgload h2{font-size: 30px; color: #000; margin-bottom: 20px; letter-spacing: 2px;
+margin-bottom: 15px; display: block;margin-left: 23%;}
+.imgload h2 span{font-weight: bold; color: #1cbaba}
+.imgload p{line-height: 1.7; font-size: 15px; margin-left: 23%; margin-top: 1%;}
+.imgload span{font-weight: bold;}
+.imgload ul{overflow: hidden; padding: 0px 40px 30px; margin: 0 23%; margin-top: 4%;
+position: relative;background:rgba(238, 238, 238, 0.2); }
+.imgload ul li{width: 100%; margin-left: 27%;}
+.imgload ul li img{width: 50%;}
+
+/*footer*/
+footer.footer {
+  padding: 32px;
+  border-top: 1px solid #979797;
+  max-height: 216px;
+	
+}
+footer.footer .footer__logo {
+  width: 10px;
+  height: 3px;
+  
+
+/*  background: url('/static/images/common/ic-logo-footer.png') no-repeat center transparent;*/
+  background-size: cover;
+  text-indent: -9999px;
+}
+footer.footer .footer__info {
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+
+  margin-top: 4px;
+}
+footer.footer .footer__info * {
+  letter-spacing: normal;
+}
+footer.footer .footer__info:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+footer.footer .footer__info .footer__info--detail {
+  float: left;
+}
+footer.footer .footer__info .footer__info--detail ul.representation-m {
+  margin-bottom: 25px;
+}
+footer.footer .footer__info .footer__info--detail ul:first-child {
+  margin-bottom: 12px;
+}
+footer.footer .footer__info .footer__info--detail ul li {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+}
+footer.footer .footer__info .footer__info--detail ul li span {
+  color: #666666;
+  margin-right: 10px;
+}
+footer.footer .footer__info .footer__info--detail ul li a {
+  font-weight: 700;
+}
+footer.footer .footer__info .footer__info--detail ul li:after {
+  content: '';
+  width: 1px;
+  height: 10px;
+  background-color: #cdcdcd;
+  display: inline-block;
+  margin: 0 20px;
+}
+footer.footer .footer__info .footer__info--detail ul li:last-child:after {
+  display: none;
+}
+footer.footer .footer__info .footer__info--detail p {
+  margin: 26px 0 0;
+  text-transform: uppercase;
+}
+footer.footer .footer__info .footer__info--sns {
+  /* margin-left: auto; */
+  float: right;
+  margin: 50px;0px;
+}
+footer.footer .footer__info .footer__info--sns ul li {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 30px;
+}
+footer.footer .footer__info .footer__info--sns ul li:last-child {
+  margin-right: 0;
+}
+footer.footer .footer__info .footer__info--sns ul li a {
+  color: #222222;
+}
+@media (max-width: 767px) {
+  footer.footer {
+    padding: 32px 0 46px;
+  }
+  footer.footer .footer__logo {
+    margin: 0 auto;
+  }
+  footer.footer .footer__info {
+    text-align: center;
+  }
+  footer.footer .footer__info .footer__info--detail {
+    float: none;
+  }
+  footer.footer .footer__info .footer__info--detail ul:nth-child(1) li {
+    display: block;
+    margin-bottom: 12px;
+  }
+  footer.footer .footer__info .footer__info--detail ul:nth-child(1) li:last-child {
+    margin-bottom: 0;
+  }
+  footer.footer .footer__info .footer__info--detail ul:nth-child(1) li:after {
+    display: none;
+  }
+  footer.footer .footer__info .footer__info--sns {
+    display: none;
+  }
+  footer.footer .footer__info .footer__info--detail p {
+    font-size: 10px;
+    color: #666666;
+    letter-spacing: normal;
+  }
+}
+@media (max-width: 340px) {
+  footer.footer .footer__info .footer__info--detail ul li:after {
+    margin: 0 10px;
+  }
+}
+
+
+
+/*반응형 제작*/
+@media screen and (max-width:1599px) {
+	
+}

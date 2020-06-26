@@ -1,0 +1,239 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,700&display=swap'); 
+
+/*reset*/
+html {
+    scroll-behavior: smooth;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, tbody, tfoot, thead, tr, th, td {margin:0;padding:0;}
+* {margin: 0; padding: 0;}
+a {color:inherit; text-decoration: inherit;}
+li {list-style: none;}
+address, em, i { font-style: normal;}
+h1, h2, h3, h4, h5,h6 {font-size: inherit;}
+a:hover { text-decoration: none; color:inherit;}
+
+/*layout*/
+body{font-family: 'Noto Sans KR', sans-serif; font-size: 15px;}
+.wrap {width: 100%; margin: 0 auto;}
+section{width: 1400px; overflow: hidden;}
+.slick-next{opacity: 0;}
+/*header*/
+header{width: 100%; height: 70px; position: fixed; 
+background: #6D6D6D; 
+z-index: 30; opacity: 0.7; overflow: hidden;}
+.innerheader{z-index: 50; width: 1000px;  height: 70px; 
+/*background: #555;*/
+margin: 0 auto;}
+.innerheader .nav{
+color: #fff; font-weight: normal; }
+.innerheader .nav li{width: 20%; text-align: center; line-height: 70px; float: left;  }
+.innerheader .nav li a{display: block;}
+.innerheader .nav li a:hover{color: #9d73f8;}
+
+
+/*fixHeader*/
+header.on{transition: all 0.5s;}
+header:before{content: ''; width: 100%; height: 0; background: #fff;
+position: absolute; top: 0; transition: all 0.6s; z-index: -1; border-bottom: 1px solid #2c2c2c; }
+header.on:before{width: 100%; height: 100%; border-bottom: 1px solid #838383; transition: all 0.5s;}
+.nav.on{transition: all 0.5s; color: #000; font-weight: bold;}
+
+/*id aside 사이드바*/
+#aside {position: absolute; right: 30px; top: 150px; width: 90px; height: 300px; border-radius: 32px; transition: top 0.3s; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
+#aside .icon{font-size: 30px; color: #999; text-align: center; margin-top: 30px;}
+#aside .icon li{margin: 20px 0;}
+#aside .icon li:hover{color: #9d73f8; transition: all 0.3s;}
+#aside .icon li p{font-size: 15px;}
+#aside .icon li:nth-child(3){position: relative;}
+#aside .icon li .inner{font-size: 17px; position: absolute; right: 40px; top: -7px; padding: 1px 70px; border-radius: 10px;
+box-sizing: border-box;
+opacity: 0;
+}z
+#aside .icon li .inner p{font-size: 16px; animation-name: inner; 
+animation-duration: }
+/*#aside .icon li .inner p:hover{}*/
+#aside .icon li .inner li:first-child a p{margin-right: 15px;}
+#aside .icon li .inner li:last-child a p{margin-top: -15px;}
+#aside .icon li .inner.on{opacity: 1;}
+
+/*--------------------------#main----------------------------------*/
+#main{width: 100%; height: 100vh; position: relative;}
+#main .main_page {position: relative; left: 48%;}
+#main .main_page h2{font-size: 140px; position: absolute; top: 390px; left: 0; z-index: 100;}
+#main .main_page h3{font-size: 25px; font-weight: normal; position: absolute; top: 580px; left: 20px; border-top: 2px solid #888;}
+#main .main_page p{position: absolute; font-size: 18px; left: 39%; transform: rotate(90deg); top: 185px;}
+#main .main_page p:after{position: absolute; content: ''; transform: rotate(90deg); width: 1px; height: 800px; top: -362px; left: 400px; background: #555;}
+#main .main_page .scroll i{position: absolute; font-size: 50px; color: #777; left: 90.6%; top: 95%;}
+#main .main_page a{display: block; color: #777; position: absolute; left: 42.5%; top: 900px;}
+#main .slide{width: 50%; height: 100vh; position: absolute; display: inline-block; top: -5%; left: 4%;
+  animation-name: float-bob;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-name: float-bob;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-name: float-bob;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-name: float-bob;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes float-bob {
+  0% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px); }
+  50% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);}
+  100% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px); } 
+}
+
+#main .slide li.furniture{position: relative; height: 101vh;}
+#main .slide li.furniture img{position: absolute; top: 60px;}
+
+#main .slide li.furniture img:nth-child(1){width: 75%; left: 4%;
+animation-name:light; animation-duration: 3s;}
+@keyframes light{
+    0%{opacity: 0;}
+    30%{opacity: 0;}
+    100%{opacity: 1;}
+}
+#main .slide li.furniture img:nth-child(2){width: 53%; top: 10%;
+left: 12%; z-index: 100; animation-name: desk; animation-duration: 2s;}
+@keyframes desk{
+    0%{opacity: 0;}
+    30%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+#main .slide li.furniture img:nth-child(3){left: 12%; width: 48%; top: 32%;
+animation-name:bed; animation-duration: 1.7s;}
+@keyframes bed{
+    0%{opacity: 0;}
+    30%{opacity: 0;}
+    100%{opacity: 1;}
+}
+#main .slide li.furniture img:nth-child(4){left: 7%; width: 36%; top: 57%;
+animation-name: tea; animation-duration: 1.5s; z-index: -100;}
+@keyframes tea{
+    0%{opacity: 0;}
+    30%{opacity: 0;}
+    100%{opacity: 1;}
+}
+#main .slide li.furniture img:nth-child(5){left: 19%; width: 45%; top: 61%;
+animation-name: plant; animation-duration: 1s;}
+@keyframes plant{
+    0%{opacity: 0;}
+    30%{opacity: 0;}
+    100%{opacity: 1;}
+}
+#main .slide li.furniture img:nth-child(6){width: 46%; top:65px; left: 0%; z-index: -1; animation-name: big_color; animation-duration: 3.1s;}
+@keyframes big_color{
+    0%{opacity: 0;}
+    30%{opacity: 0;}
+    100%{opacity: 1;}
+}
+#main .slide li.furniture img:nth-child(7){width: 14%; top:30%; left: 63%; z-index: -1; animation-name: small_color; animation-duration: 3.2s;}
+@keyframes small_color{
+    0%{opacity: 0;}
+    30%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+#main .slide li.workerholic{position: relative; height: 101vh;}
+#main .slide li.workerholic img{position: absolute; top: 200px; left: -45px; width: 77%;}
+
+/*http://www.templatemonsterpreview.com/demo/84004.html*.0/
+
+
+/*https://hoai.tistory.com/entry/blink-css-%EA%B9%9C%EB%B9%A1%EC%9D%B4%EB%8A%94-%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98-%ED%9A%A8%EA%B3%BC*/
+
+/*profile*/
+.profile{ width: 1400px;  margin: 0 auto;}
+.profile #work{ position: relative; padding: 11% 0; box-sizing: border-box;}
+.profile #work .skill{position: absolute; top: 10%; left: 28%;}
+
+.profile #work .skill > img{position: absolute; left: 2%; width: 40%;}
+.profile #work h3{position: absolute;  top: 70px; right: 31%; display: inline-block; font-size: 20px;}
+.profile #work .skill ul{text-align: center; padding: 5% 0;float: left; margin-left: 45%; margin-top: 15%; width: 100%;}
+.profile #work .skill ul li{float: left;}
+.profile #work .skill ul li .img{width: 50%; }
+.profile #work .skill ul li .img img{width: 50%;}
+.profile #work .skill ul li:nth-child(1) .img{}
+.profile #work .skill ul li:nth-child(2) .img{margin: 0 -47%;}
+.profile #work .skill ul li:nth-child(3) .img{width: 63%; margin: 0 -130%;}
+.profile #work .skill ul li span{}
+
+/*load*/
+.load{width: 100%;height: 150vh; margin-top: 50px; padding: 10% 0; box-sizing: border-box; position: relative;}
+.load .life{width: 1400px; height: 110px; margin: 0 auto; margin-top: -10%; padding: 20% 0; position: relative;}
+.load .life span{font-size: 20px; top: 0; position: absolute;}
+.load .life span:nth-child(1){left: 32%;}
+.load .life span:nth-child(2){left: 62%;}
+.load .life .load_img{width: 50%; position: absolute; top: 0; left: 45%;}
+.load .life .load_img img{width: 30%; margin-top: 5%;}
+.load .life ul.explain{position: absolute; width: 100%; height: 140vh; top: 30px; overflow: hidden;}
+.load .life ul.explain li.experience {position: relative; width: 50%;
+top: 155px;}
+.load .life ul.explain li.experience .story{position: absolute; top: 50px;
+padding: 130px 0;}
+.load .life ul.explain li.experience .story p:first-child{position: absolute; top: 0;}
+/*---------ul.explain스크롤 이벤트---------------------------------*/
+.load .explain.on{
+    animation-name: scroll;
+/*에니메이션이 진행되는 시간*/
+	animation-duration: 2s;
+}
+/*---------ul.explain스크롤 이벤트 end-----------------------------*/
+
+.load li.experience{margin-left: 250px; position: relative;}
+.load li.experience .story{position: absolute; left: 45px;top: 0;
+animation-name: story; animation-duration: 1.9s;}
+.load li.experience p{margin-bottom: 150px;} 
+
+@keyframes story{
+    0%{opacity: 0;}
+	30%{opacity: 0;}
+	100%{opacity: 1;}
+}
+
+.load .experience.on .story p:nth-child(1) {animation-name: story; 
+animation-duration: 1s;}
+.load .experience.on .story p:nth-child(2) {animation-duration: 1.5s;
+animation-name: story; }
+.load .experience.on .story p:nth-child(3) {animation-duration: 1.7s;
+animation-name: story; }
+.load .experience.on .story p:nth-child(4) {animation-duration: 1.9s; animation-name: story; }
+.load .experience.on .story p:nth-child(5) {animation-duration: 2s;
+animation-name: story; }
+
+/*awards*/
+.load li.awards{width: 50%; top: 155px;}
+.load li.awards .spac{position: absolute; right: 200px; top: 0; animation-name: awards; animation-duration: 1.5s; padding: 130px 0}
+.load li.awards p{margin: 130px 0;}
+.load li.awards p:first-child{margin: 0; padding: 0; margin-top: -53px;}
+a.goTop{display: block; font-size: 50px; color: #777; transform: rotate(180deg); position: absolute; right: -110px; top:1300px; z-index: 1000;}
+
+/*-------------------------------awards 스크롤 이벤트------------------------------------*/
+@keyframes awards{
+    0%{opacity: 0;  animation-duration: 1.7s}
+    30%{opacity: 0;  animation-duration: 1.7s}
+	50%{opacity: 0;  animation-duration: 1.5s}
+	100%{opacity: 1;  animation-duration: 1.5s}
+}
+
+.load li.awards.on .spac p:nth-child(1){animation-name: awards; animation-duration: 1.5s; }
+.load li.awards.on .spac p:nth-child(2){animation-name: awards; animation-duration: 1.7s; }
+.load li.awards.on .spac p:nth-child(3){animation-name: awards; animation-duration: 1.9s; }
+

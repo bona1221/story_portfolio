@@ -1,0 +1,68 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,700&display=swap'); 
+
+/*reset*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, tbody, tfoot, thead, tr, th, td {margin:0;padding:0;}
+* {margin: 0; padding: 0;}
+a {color:inherit; text-decoration: inherit;}
+li {list-style: none;}
+address, em, i { font-style: normal;}
+h1, h2, h3, h4, h5,h6 {font-size: inherit;}
+a:hover { text-decoration: none;}
+
+/*layout*/
+body{font-family: 'Noto Sans KR', sans-serif; font-size: 15px;}
+.wrap {width: 100%; margin: 0 auto;}
+
+/*header*/
+header{width: 100%; height: 70px; position: fixed; background: #6D6D6D; z-index: 30; opacity: 0.7;}
+.innerheader{z-index: 50;}
+.innerheader .nav{position: absolute; left: 50%; transform: translateX(-50%);
+color: #fff; font-weight: normal;}
+.innerheader .nav li{padding: 0 30px; line-height: 70px; float: left; }
+.innerheader .nav li a{display: block;}
+.innerheader .nav li a:hover{color: #ffd800; text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;}
+
+/*fixHeader*/
+header.on{transition: all 0.5s;}
+header:before{content: ''; width: 100%; background: #fff;
+position: absolute; top: 0; transition: all 0.6s; z-index: -1; border-bottom: 1px solid #2c2c2c; }
+header.on:before{width: 100%; height: 100%; border-bottom: 1px solid #838383; transition: all 0.5s;}
+.nav.on{transition: all 0.5s; color: #000; font-weight: bold;}
+
+
+
+/*id aside 사이드바*/
+#aside {position: absolute; right: 30px; top: 150px; width: 90px; height: 300px; border-radius: 32px; transition: top 0.3s; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
+.icon{font-size: 30px; color: #999; text-align: center; margin-top: 30px;}
+.icon li{margin: 20px 0;}
+.icon li:hover{color: #9d73f8; transition: all 0.3s;}
+.icon li p{font-size: 15px;}
+
+
+
+/*package_gallery*/
+.package_gallery{width: 100%; overflow: hidden; position: relative; margin-bottom: -50%;}
+.package_gallery ul{overflow: hidden; padding:10% 20%;; box-sizing: border-box; margin-top: 20px;  margin-top: 10%;}
+.package_gallery ul li{height: auto; box-sizing: border-box; padding: 0 5%;}
+
+.package_gallery .tit{position: absolute; left: 0; right: 0; bottom: 0; display: block; padding: 5px 22px;  background: #fff;
+transition: all 500ms; text-decoration: none;}
+.package_gallery .tit p{color: #000; margin-bottom: 8px;}
+.package_gallery .tit span{color: #999;}
+
+/*blooming*/
+.package_gallery .blooming{position: relative; float: left; width: 480px; height: 360px; display: block; overflow: hidden; 
+background: linear-gradient(rgba(227,227,227,1) 0%, rgba(255,255,255,1) 100%); border-top-left-radius:30px;
+box-shadow: 0px 5px 8px 2px rgba(204, 204, 204, 0.62);}
+.package_gallery .blooming .tit_img{width: 100%; margin: auto;
+position: relative;}
+.package_gallery .blooming .tit_img img{width: 75%; position: absolute; left: 20px; top: 20px;}
+.package_gallery .blooming .brand_story{padding-top: 10px; width: 50%;}
+.package_gallery .blooming .brand_story p{margin-top: 10px;}
+/*child*/
+.package_gallery .child{position: relative; 480px; width: 480px; height: 360px; float: right;
+box-shadow: -1px 5px 8px 2px rgba(204, 204, 204, 0.62); display: block; overflow: hidden; background: linear-gradient(rgb(255, 218, 218) 0%, rgba(255,255,255,1) 100%)fixed; border-top-right-radius: 30px;}
+.package_gallery .child .tit_img{width: 100%; position: relative;}
+.package_gallery .child .tit_img img{position: absolute; width: 85%; left: 5%}
+.package_gallery .tit .child .brand_story{display: block; width: 50%; overflow: hidden;  margin-right: 50%; color:}

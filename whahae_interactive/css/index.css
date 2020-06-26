@@ -1,0 +1,492 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Exo+2|Noto+Sans+KR&display=swap');
+
+@font-face { font-family: 'NanumSquareRound'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+/*reset*/
+*{margin: 0; padding: 0;}
+li {list-style: none;}
+
+a {color: inherit; text-decoration: none;}
+
+/*layout*/
+.wrap{width: 100%; margin: 0 auto; background-color: #fff; overflow: hidden;}
+.en {font-family: 'NanumSquareRound';}
+
+body {font-family: 'NanumSquareRound', sans-serif;
+background-color: #f1f1f1;}
+
+header {width: 100%; height: 72px; background-color: rgba(255, 255, 255, 0.81); position: fixed; z-index: 200;}
+header .innerHeader {width: 1070px; height: 100%; margin: 0 auto; position: relative;}
+/*header .innerHeader {content: ""; border-bottom: 1px solid #ffffff;}*/
+header .innerHeader .logo {float: left;}
+header .innerHeader .logo a {display: block; width: 100%; height: 100%;}
+header .innerHeader .logo a img {width: 50%; height: 100%;}
+/*gnb*/
+header .innerHeader .gnb {float: left; left: 30%; position: absolute;}
+header .innerHeader .gnb li {float: left; padding:24px 30px;}
+header .innerHeader .gnb li a {display: block; width: 100%; height: 200%; font-size: 18px;
+color: #1cbaba;}
+header .innerHeader .gnb li a:hover .innerHeader .gnb li a:focus {color: #119e9e;}
+/*tnb*/
+header .innerHeader .tnb {float: right; margin-right: 50px; margin-top: 10px;
+}  
+header .innerHeader .tnb a {display: block; font-size: 14px; width: 100%; height: 100%; 
+text-align: center; color: #1cbaba; font-size: 16px; padding: 10px 10px; border: 1px solid #1cbaba; border-radius: 30px; position: relative; overflow: hidden; z-index: 500; }
+header .innerHeader .tnb a:after {content: ''; position: absolute; left: 0; top: 0; width: 0%; height: 100%; }
+header .innerHeader .tnb a:hover:after {position: absolute; background: rgba(28, 186, 186, 0.35); transition: all 0.3s; width: 100%; }
+/*
+header .gnbMo{font-size: 33px; color: #119e9e; position: absolute;
+left: 92%; top: 22%; display: none;}
+*/
+
+/*햄버거바*/
+header .gnbMo {font-size: 35px; display: none; position: absolute; top: 20%; color: #1cbaba;}
+
+/*main*/
+.main {width: 100%; height: 70vh; background: url(../img/0.jpg) no-repeat center/cover; 
+position: relative; color: #fff;
+}
+.main:after{content: '';width: 100%; height: 70vh; background: rgba(59, 59, 59, 0.3); position: absolute;}
+.main .mainTitle {position: absolute; top: 35%;text-align: center; width: 100%;
+display: inline-block;}
+.main .mainTitle a {display: block; }
+.main .mainTitle .slogan {font-size: 65px; text-align: center; color: #fff; z-index: 1; 
+position: absolute;left: 50%; top: 50%; transform: translate(-50%,-50%);}
+.main .mainTitle p {color: #fff; font-size: 17px; z-index: 1; position: absolute;
+left: 50%; top: 150%; transform: translate(-50%,-50%); display: inline-block;
+margin-top: 90px;}
+
+.main .mainTitle a.view {position: absolute; left: 50%; top: 150%; transform: translate(-50%,-50%); display: block; padding: 10px 5px; color: #fff; margin-top: 8%; font-size: 15px; border: 1px solid #fff; border-radius: 30px; width: 100px; z-index: 1; font-weight: bold; letter-spacing: 1px;
+overflow: hidden;}
+.main .mainTitle a.view:after {content: ''; width: 0%; height: 100%; position: absolute; 
+left: 0; top: 0; background-color: rgba(255, 255, 255, 0.06); transition: all .5s; z-index: -1;}
+.main .mainTitle a.view:hover:after {width: 100%; transition: all 0.3s; 
+color: #1cbaba;}
+
+
+/*revirew*/
+.review {width: 1070px; background: #fff; text-align: center; margin: 0 auto; color: #1cbaba; padding: 50px 0px; box-shadow:  0 0 12px #afafaf; position: relative;}
+.review .item h2 {font-size: 60px; border-bottom: 2px;
+ display: inline-block; color: #1cbaba}
+.review .item h2:after {content: ''; display: block; margin: 10px auto; border-bottom: 4px solid #1cbaba; width: 70px; }
+.review .item p {margin-top: 20px; font-size: 20px; font-weight: bolder; color: #11afaf;}
+.review .item p:nth-child(1) {padding-bottom: 20px; font-size: 15px; 
+margin: 5px 50px;}
+.review .imgleft {position: absolute; right: 75%; bottom: 4%;}
+.review .imgleft img {width: 80px;}
+.review .imgright {position: absolute; left: 75%; bottom: 4%;}
+.review .imgright img {width: 80px;}
+
+/*brevirew*/
+.brevirew {width: 100%; background: url(../img/iphone.jpg)no-repeat center/cover; padding: 40px 0px; box-sizing: border-box; background-attachment: fixed;}
+.brevirew:after {content: ''; position: fixed;}
+.brevirew h2 {color: #fff; margin: 0 450px; font-size: 36px;}
+.brevirew h2 a {color: #fff;}
+.brevirew p {color: #fff; margin: 15px 450px; line-height: 23px; font-size: 16px; display: inline-block;}
+
+/*shopping*/
+.shopping {background-color: rgba(94, 223, 223, 0.2); padding: 100px 0px;
+margin: 0 auto; position: relative; margin-top: 30px;}
+.shopping h3 {font-size: 40px; text-align: center; color: #119e9e; line-height: 50px; display: block;}
+.shopping p.shopre {text-align: center; margin-top: 30px; font-size: 16px; 
+line-height: 25px; color: #222; display: block;}
+.shopping .img {display: inline-block;}
+.shopping .img img:nth-child(1) {width: 13%; box-shadow:  0 0 12px #afafaf; 
+border-radius: 20px; float: right;  position: absolute; right: 240px; top: 30px}
+.shopping .img img:nth-child(2) {width: 7%; box-shadow:  0 0 12px #afafaf; 
+border-radius: 20px;  position: absolute; left: 440px; top: 90px;}
+.shopping .img img:nth-child(3) {width: 8%; box-shadow:  0 0 12px #afafaf; 
+border-radius: 20px;  position: absolute; right: 450px; top: 230px;}
+.shopping .img img:nth-child(4) {position: absolute; width: 15%; bottom: -25%; left: 5%;}
+.shopping .img img:nth-child(4):hover {transform: rotate( 10deg ); transition: all 0.3s;}
+
+/*ranking*/
+.ranking {width: 100%; position: relative; overflow: hidden;}
+.ranking .ran {width: 1070px; height: 450px; margin: 0 auto; background: #fff;}
+.ranking .ran h3 {color: #119e9e; font-size: 35px; padding-left: 85px; padding-top: 98px;}
+.ranking .ran > p {font-size: 15px; line-height: 1.5; color: #222; display: block; padding-left: 85px; padding-top: 30px;}
+.ranking .listimg {width: 100%; height: 643px; position: absolute; left: 45%; top:5px; display: inline-block;}
+.ranking .listimg img {width: 26%;}
+
+
+/*expert*/
+.expert {width: 100%; overflow: hidden; position: relative; }
+.expert .editer {width: 100%; height: 640px;
+background: url(../img/keyboard.png) no-repeat center; }
+.expert .editer h3 {color: #119e9e; font-size: 40px; padding-left: 25%; padding-top: 155px; box-sizing: border-box; display: inline-block;}
+.expert .editer h4 {font-size:16px; line-height: 1.5; color: #222; margin: 0 auto; padding-left: 25%; margin-top: 20px; margin-right: 20px; font-weight: normal; line-height: 1.6;}
+.expert .img {width: 350px; position: absolute; left: 55%; bottom: 10%;
+display: inline-block;}
+.expert .img img {width: 100%; border-radius: 5px; box-shadow:  0 0 12px #afafaf;}
+
+/*angle*/
+.angle {width: 100%; background: #d1edef; position: relative; }
+.angle .beautyan {width: 1903px; height: 520px;}
+.angle .beautyan h2 {text-align: center; color: #119e9e; padding-top: 8%; 
+font-size: 36px;}
+.angle .beautyan p { line-height: 1.9; margin-top: 19px; font-size: 16px;
+ text-align: center;}
+.angle .beautyan .img {position: absolute; left: 38%; bottom: 2%; opacity: 0.4; width: 50; }
+
+/*download*/
+.download {font-weight: bold; position: relative; text-align: center;}
+.download .down {width:100%; height: 259px; background-color: #5edfdf;}
+.download .down h3 {color: #fff; font-size: 40px; padding-top: 2%;}
+.download .down p {font-size: 16px; color: #fff; margin-top: 15px;}
+
+.download .btn {position: absolute; top: 65%; left: 39%; }
+.download .btn li:nth-child(1){margin-right: 100px;}
+.download .btn li {float: left; }
+.download .btn li a {display: block; width: 100%; height: 100%; line-height: 1.5; 
+border: 2px solid #fff; 
+border-radius: 90px; font-size: 30px; padding-left: 25px; padding-right: 20px; 
+color: #fff;}
+.download .btn ul li:nth-child(1) {margin-left: 0px 5px; font-weight: normal;} 
+.download .btn ul li:nth-child(1):hover a {background: #fff; transition: all 0.3s; color: #1cbaba;} 
+ 
+.download .btn ul li:nth-child(2) {margin-left: 5px; font-weight: normal;}  
+.download .btn ul li:nth-child(2):hover a {background: #fff; transition: all 0.3s; color: #1cbaba;} 
+ 
+
+/*footer*/
+footer.footer {
+  padding: 32px;
+  border-top: 1px solid #979797;
+  max-height: 216px;
+	
+}
+footer.footer .footer__logo {
+  width: 10px;
+  height: 3px;
+  
+
+/*  background: url('/static/images/common/ic-logo-footer.png') no-repeat center transparent;*/
+  background-size: cover;
+  text-indent: -9999px;
+}
+footer.footer .footer__info {
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+
+  margin-top: 4px;
+}
+footer.footer .footer__info * {
+  letter-spacing: normal;
+}
+footer.footer .footer__info:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+footer.footer .footer__info .footer__info--detail {
+  float: left;
+}
+footer.footer .footer__info .footer__info--detail ul.representation-m {
+  margin-bottom: 25px;
+}
+footer.footer .footer__info .footer__info--detail ul:first-child {
+  margin-bottom: 12px;
+}
+footer.footer .footer__info .footer__info--detail ul li {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+}
+footer.footer .footer__info .footer__info--detail ul li span {
+  color: #666666;
+  margin-right: 10px;
+}
+footer.footer .footer__info .footer__info--detail ul li a {
+  font-weight: 700;
+}
+footer.footer .footer__info .footer__info--detail ul li:after {
+  content: '';
+  width: 1px;
+  height: 10px;
+  background-color: #cdcdcd;
+  display: inline-block;
+  margin: 0 20px;
+}
+footer.footer .footer__info .footer__info--detail ul li:last-child:after {
+  display: none;
+}
+footer.footer .footer__info .footer__info--detail p {
+  margin: 26px 0 0;
+  text-transform: uppercase;
+}
+footer.footer .footer__info .footer__info--sns {
+  /* margin-left: auto; */
+  float: right;
+  margin: 50px;0px;
+}
+footer.footer .footer__info .footer__info--sns ul li {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 30px;
+}
+footer.footer .footer__info .footer__info--sns ul li:last-child {
+  margin-right: 0;
+}
+footer.footer .footer__info .footer__info--sns ul li a {
+  color: #222222;
+}
+@media (max-width: 767px) {
+  footer.footer {
+    padding: 32px 0 46px;
+  }
+  footer.footer .footer__logo {
+    margin: 0 auto;
+  }
+  footer.footer .footer__info {
+    text-align: center;
+  }
+  footer.footer .footer__info .footer__info--detail {
+    float: none;
+  }
+  footer.footer .footer__info .footer__info--detail ul:nth-child(1) li {
+    display: block;
+    margin-bottom: 12px;
+  }
+  footer.footer .footer__info .footer__info--detail ul:nth-child(1) li:last-child {
+    margin-bottom: 0;
+  }
+  footer.footer .footer__info .footer__info--detail ul:nth-child(1) li:after {
+    display: none;
+  }
+  footer.footer .footer__info .footer__info--sns {
+    display: none;
+  }
+  footer.footer .footer__info .footer__info--detail p {
+    font-size: 10px;
+    color: #666666;
+    letter-spacing: normal;
+  }
+}
+/*
+@media (max-width: 340px) {
+  footer.footer .footer__info .footer__info--detail ul li:after {
+    margin: 0 10px;
+  }
+*/
+
+
+/*   반응형 	*/
+	
+/*1024*/
+@media screen and (max-width:1024px){
+	header .innerHeader {width: 95%; min-width: 90%; position: relative;}
+	header .innerHeader .gnb,header .innerHeader .tnb {display: none;}
+	header .innerHeader h1.logo img{width: 60px;}
+	header .gnbMo {display: block; position: absolute; right: 5%;}
+	section.main .mainTitle h2.slogan{width: 80%; position: absolute; top:30px;}
+	section.main .mainTitle p{position: absolute; top: 23px}
+	section.main .mainTitle .view{position: absolute; top: 110px;}
+	section.brevirew{width: 100%; padding: 40px 0; position: relative;}
+	section.brevirew h2{width: 40%;  left: -25%; top: 20px; position: absolute;}
+	section.brevirew p{width: 30%;
+   line-height: 1.7; display: block; margin-top: 45px; margin-left: 19%;}
+    section.shopping{top: -30px; height: 155px;}
+    section.shopping h3{font-size: 35px; line-height: 1.4; margin-top: 20px;}
+    section.shopping .shopre{font-size: 15px; margin-top: 10px;}
+    section.shopping p.img img:nth-child(1){position: absolute; right: 57px;
+    width: 17%;}
+    section.shopping p.img img:nth-child(2){position: absolute; left: 21%;
+    width: 10%; top: 10%;}
+    section.shopping p.img img:nth-child(3){right: 19%; width: 10%;
+    top: 51%;}
+    section.shopping p.img img:nth-child(4){position: absolute; width: 17%;
+    z-index: 2;}
+    section.ranking{position: relative;}
+    section.ranking .ran h3{font-size:27px;padding-top: 12%; }
+	section.ranking .ran > p{line-height: 2;}
+	section.ranking p.listimg{width: 100%;}
+    section.ranking p.listimg img{width: 46%;}
+	section.expert{width: 100%; position: relative;}
+	section.expert .editer{height: 450px;}
+	section.expert .editer h3{position: absolute; left: -130px;}
+	section.expert .editer h4{position: absolute; bottom: 20px; 
+	left: -130px; bottom: 120px;}
+	section.expert .editer p.img {width: 100%; position: relative;}
+	section.expert .editer p.img img{width: 25%; position: absolute;
+	left: 60px; margin-top: 90px;}
+	section.angle{width: 100%; position: relative;}
+	section.angle .beautyan{height: 410px; width: 100%; margin-top: -2%;}
+	section.angle .beautyan h2{position: absolute; width: 50%; left: 26%; right: 50%; transform: translate(-50,-50);}
+	section.angle .beautyan p{position: absolute; width: 100%; left:52%; right: 50%; transform: translate(-50% , -50%); bottom: 19%; bottom: 15%;}
+	section.angle .beautyan p.img{ position: relative; width: 100%;
+	left: 34%; right: 50%; transform: translate(-50 , -50); bottom: -65%;
+	}
+	section.angle .beautyan p.img img{width: 35%; position: absolute; 
+	bottom: -110px;}
+	section.download{position: relative; margin-top: -1.5%;}
+	section.download .down h3{position: absolute; font-size: 35px;
+	left: 50%; right: 50%; transform: translate(-50% , 10px); width: 50%;}
+	section.download .down p{font-size: 20px; position: absolute; left: 50%; right: 50%; transform: translate(-50% , 75px);  width: 50%;}
+	section.download .btn{position: absolute; left: 27%; top: 60%;}
+/*
+	section.footer__info .footer__info--detail{position: relative;}
+	section.footer__info .footer__info--detail ul li{position: absolute; 
+	margin-left: 20px;}
+*/
+    }
+
+/*768*/
+@media screen and (max-width:768px){
+	header .innerHeader {width: 90%; min-width: 90%; 
+	 position: relative;}
+    header .innerHeader .gnb{position: absolute; left:18%;}
+	header .gnb .innerHeader ul{position: absolute; left: 50%; 
+	background-color: red;}
+	header .gnb .innerHeader ul li{position: absolute; left: 50%;}
+    header .innerHeader .tnb{margin-top: 2.5%;}
+    
+	section.main{width: 100%; height: 455px; position: relative;}
+	section.main .mainTitle h2.slogan{position: absolute;
+	width: 100%; font-size: 47px; top: 35px;}
+	section.main .mainTitle p{width: 80%; font-size: 17px;
+	position: absolute; top: 5px;}
+	section.review{width: 100%; height: 18vh; position: relative;}
+	section.review .item{margin-top: 20px; position: absolute;
+	left: 20%; top: 2%; z-index: 5;}
+	section.review .item h2{font-size: 270%;}
+	.review .item h2:after{content: ''; width: 45px;}
+	section.review p.imgleft{width: 10%; left: 83px; top: 60%;
+	position: absolute;}
+	section.review p.imgright{position: absolute; top: 60%; right: 85px;}
+	section.brevirew{position: relative; width: 100%; height: 16vh;}
+	section.brevirew h2{width: 50%; font-size: 25px; position: absolute;
+	left: -45%; top: 15px;}
+	section.brevirew p{width: 50%; position: absolute; left: -5%; 
+	top: 19px;}
+	section.shopping{position: relative;}
+	section.shopping h3{font-size: 30px; line-height: 1.5; position: absolute; left: 50%; right: 50%; transform: translate(-50% , -50%); width: 50%; top: 110px;}
+	section.shopping p.shopre{position: absolute; left: 50%; right: 50%; transform: translate(-50% , -50%); width: 50%; top: 57%; 
+	font-size: 13px;}
+	section.shopping p.img img:nth-child(1){position: absolute; width: 16%;
+	top: 50px; right: 45px;}
+	section.shopping p.img img:nth-child(2){position: absolute; width: 13%;
+	left: 100px;}
+	section.shopping p.img img:nth-child(3){position: absolute; width: 12%;
+	right: 17%; right: 16%; top: 150px;}
+	section.shopping p.img img:nth-child(4){position: absolute; width: 21%;
+	top: 155px; left: 50px;}
+	section.ranking{width: 100%; height: 40vh;}
+	section.ranking h3{position: absolute; bottom: 48%;}
+	section.ranking p{position: absolute; top: 47%}
+	section.ranking .listimg img{position: absolute; right: 48%;}
+	section.expert{width: 100%; position: relative;}
+	section.expert .editer{height: 35vh;}
+	section.expert .editer h3{position: absolute; bottom: 45%; font-size: 30px; top: -30%; }
+	section.expert .editer h4{font-size: 14px; bottom: 100px;}
+	section.expert .editer p.img{width: 85%; bottom: 62px;}
+	section.angle{position: relative; }
+	section.angle{position: relative; width: 100%; height: 45vh;
+	}
+	section.angle .beautyan{position: absolute;}
+	section.angle .beautyan h2{position: absolute; top: 25px;}
+	section.angle .beautyan p{font-size:15px;}
+	section.angle .beautyan .img{position: relative;}
+	section.angle .beautyan p.img img{position: absolute; width: 45%;
+	left: 50%; right: 50%; transform: translate(-10% , -3%);}
+	section.download{position: relative; width: 100%; height: 10vh;
+    padding: 12px 0;}
+	section.download .down h3{position: absolute; font-size: 30px; 
+	width: 60%; left: 50%; right: 50%; transform: translate(-50% , 48%);}
+	section.download .down p{font-size: 18px;}
+	section.download .down .btn{position: relative; }
+    section.download .btn{position: absolute; left: 20%; top: 160%;}
+    .footer .container{width: 100%;margin-top:30%;}
+    .footer .container .footer__info--sns{top: 20;}
+    
+    /*320*/
+	@media screen and (max-width:320px){
+		header{width: 100%; height: 5vh;}
+		header .innerHeader {width: 90%; min-width: 90%; position: relative;}
+		header .innerHeader h1.logo a img{width: 37px;}
+		header .innerHeader .gnb ul{width: 100%; display: inline-block;}
+		header .innerHeader .gnb ul li a{color: red;
+		display: inline-block; font-size: 13px; float: left; display: none;}	
+		header .gnbMo {display: block; position: absolute; right: 5%;
+		font-size: 25px;}
+		header .innerHeader .tnb{position: absolute; right: 10px;
+		margin-right: 5px; margin-top: 3px; margin-top: 20px; margin-right: -5px;
+		display: none;}
+		header .innerHeader .tnb a{display: block; font-size: 12px;
+		width: 100%; height: 100%; padding: 7px 7px; }
+		section.main{width: 100%; height: 40vh; position: relative;}
+		section.main {background: url(../img/0.jpg) no-repeat center/cover; background-size: 220%;}
+		section.main .mainTitle h2.slogan{font-size: 23px;}
+		section.main .mainTitle p{font-size: 12px; position: absolute; top: -12px;}
+		section.main .mainTitle .view{position: absolute; padding: 6px 0;}
+		section.review{position: relative; height: 10vh;}
+		section.review .item{position: relative; }
+		section.review .item p:nth-child(1){position: absolute;
+		width: 100%; color: #1cbaba; left: -110px; top: -55px;}
+		section.review .item p:last-child{font-size: 13px;
+		position: absolute; left: -15%; top: 35px;}
+		section.review .item h2{font-size: 30px; position: absolute; color: #1cbaba;
+		right: 50%; left: 5%; top: -15px;}
+		section.review .item h2:after{content: ''; width: 27px; position: absolute; 
+		left: 95%; left: 70px;}
+		section.review .imgleft img{position: absolute; width: 60px; right: 20px;
+		opacity: 0.7; top: -10px;}
+		section.review .imgright img{position: absolute; width: 60px; right: -45px;
+		opacity: 0.7; top: -10px;}
+		section.brevirew{position: relative; padding: 20px 0; width: 100%; 
+		height: 10vh; background: url(../img/iphone.jpg)no-repeat center/cover; }
+		section.brevirew h2{position: absolute; font-size: 20px; left: -130%;
+		top: 4px; width: 100%;}
+		section.brevirew p{position: absolute; width: 100%; left: -8%;
+		font-size: 13px; top: -10px;}
+		section.shopping{position: relative; height: 14vh;}
+		section.shopping h3{width: 100%; font-size: 23px; position: absolute; top: 15%;}
+		section.shopping p.shopre{width: 100%; font-size: 12px; position: absolute;
+		top: 40%; line-height: 1.8;}
+		section.shopping .img{width: 100%; position: relative;}
+		section.shopping p.img img:nth-child(1){position: absolute; width: 27%;
+		top: 70px;}
+		section.shopping p.img img:nth-child(2){position: absolute; left: 30px;
+		top: 70px; width: 23%;}
+		section.shopping p.img img:nth-child(3){position: absolute; width: 20%;
+		left: 50%; top: 120px;}
+		section.shopping p.img img:nth-child(4){display: none;}
+		section.ranking{width: 100%; height: 35vh;}
+		section.ranking .ran{position: relative;}
+		section.ranking .ran h3{position: absolute; text-align: center; top: -130px;
+		font-size: 25px;}
+		section.ranking .ran p{position: absolute; left: -54px; text-align: center; 
+		top: 50px; line-height: 1.7; font-size: 13px; z-index: 5;}
+		section.ranking .ran p.listimg{position: relative;}
+		section.ranking p.listimg img{width: 56%; position: absolute; left: -20%;
+		top: 22%;}
+		section.expert .editer{position: relative; width: 100%; height: 25vh;}
+		section.expert .editer h3{font-size: 20px; left: -55px;
+		top: -56%;}
+		section.expert .editer h4{left: -54px; width: 100%;
+		font-size: 12px; top: 70px; z-index: 5;}
+		section.expert .editer p.img{width: 110%; left: 45%; top: -20%;
+		opacity: 0.6}
+		section.angle{width: 100%; height: 35vh;}
+		section.angle .beautyan h2{width: 100%; font-size: 25px; left: 1px;}
+		section.angle .beautyan p{font-size: 12px; top:47%; left: 50%;}
+		section.angle .beautyan p.img{position: relative;}
+		section.angle .beautyan p.img img{position: absolute; top: -100%; 
+		width: 80%; left:65%; right: 50%;  transform: translate(-50% , -50%); top: -50px;}
+		section.download{ margin-top: -20px;}
+		section.download .down h3{width: 100%; font-size: 20px;}
+		section.download .down p{width: 100%; font-size: 15px; position: absolute; bottom: 90px;}
+		section.download .btn{margin-top: -50px; margin-left: 7%;}
+		section.download .btn ul li{margin: 10px 0;}
+		section.download .btn ul li:nth-child(2){margin-left:-15px;}
+		section.download .btn li a{padding-left: 5px; line-height: 1.4; width: 90%; font-size: 27px; padding: 0 10px;}
+		
+		.footer__info{display: none;}
+	}
+    
+    

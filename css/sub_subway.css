@@ -1,0 +1,93 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,700&display=swap'); 
+
+/*reset*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, tbody, tfoot, thead, tr, th, td {margin:0;padding:0;}
+* {margin: 0; padding: 0;}
+a {color:inherit; text-decoration: inherit;}
+li {list-style: none;}
+address, em, i { font-style: normal;}
+h1, h2, h3, h4, h5,h6 {font-size: inherit;}
+a:hover { text-decoration: none;}
+
+/*layout*/
+body{font-family: 'Noto Sans KR', sans-serif; font-size: 15px;}
+.wrap {width: 100%; margin: 0 auto;}
+
+
+
+/*header*/
+header{width: 100%; height: 70px; position: fixed; background: #6D6D6D; z-index: 30; opacity: 0.7;}
+.innerheader{z-index: 50;}
+.innerheader .nav{position: absolute; left: 50%; transform: translateX(-50%);
+color: #fff; font-weight: normal;}
+.innerheader .nav li{padding: 0 30px; line-height: 70px; float: left; }
+.innerheader .nav li a{display: block;}
+.innerheader .nav li a:hover{color: #9d73f8;}
+
+
+/*fixHeader*/
+header.on{transition: all 0.5s;}
+header:before{content: ''; width: 100%; height: 0; background: #fff;
+position: absolute; top: 0; transition: all 0.6s; z-index: -1; border-bottom: 1px solid #2c2c2c; }
+header.on:before{width: 100%; height: 100%; border-bottom: 1px solid #838383; transition: all 0.5s;}
+.nav.on{transition: all 0.5s; color: #000; font-weight: bold;}
+
+
+
+
+
+/*subway*/
+.subway{width: 100%; height: 100vh; background: #f1f1f1; position: relative; z-index: -1;}
+
+.subway .title{width: 1400px; margin: 0 auto;}
+.subway .title  h3{position: absolute;left: 22%; top: 22%; font-size: 20px;}
+.subway .title p{position: absolute; left: 22%; top: 26%; font-size: 16px;}
+.subway .title span{float: right; margin-top: 10%; color: #b4b4b4; padding: 0 40px;}
+.subway .title .img{width: 75%; position: absolute; left: 50%; right: 50%; top: 28%; transform: translate(-50%,-22%); display: block;}
+.subway .title .img img{width: 100%;}
+
+
+.sub_wrap{width: 100%; margin: 0 auto; position: relative; background: #e2e2e2; overflow: hidden;}
+.sub_wrap .txt{width: 1400px; padding: 20% 0; position: relative; top: 100%; box-sizing: border-box; margin: 0 auto;}
+.sub_wrap .txt h3{position: absolute; left: 0; font-size: 17px; top: 9%;}
+.sub_wrap .txt h3:before{content: ''; position: absolute; border: 1px solid rgba(50, 132, 69, 0.72); width: 300px; top: 32px;}
+.sub_wrap .txt span{position: absolute; left: 0%; top: 13%; line-height: 1.6;}
+.sub_wrap .txt ul{width: 100%; height: 60vh; 
+margin-top: -10%; margin-left: 80px; margin: 0 auto;}
+.sub_wrap .txt ul li{position: relative; left: 24%; margin-top: -7%;}
+.sub_wrap .txt ul li img{position: absolute; width: 15%; border-radius: 10px; border: 1px solid #d3d3d3; margin-top: 15px; left: 20%;}
+.sub_wrap .txt ul li:nth-child(1) img{left: 4%}
+.sub_wrap .txt ul li:nth-child(2) img{left: 22%;}
+.sub_wrap .txt ul li:nth-child(3) img{left: 40%; top: 0;}
+.sub_wrap .txt ul li:nth-child(4) img{left: 58%; }
+.sub_wrap .txt ul li:nth-child(5) img{right: 90%; left: 4%; top: 480px;}
+.sub_wrap .txt ul li:nth-child(6) img{top: 480px; left: 22%;}
+.sub_wrap .txt ul li:nth-child(7) img{left: 40%; top: 480px;}
+.sub_wrap .txt ul li:nth-child(8) img{left: 58%; top: 480px;}
+
+.sub_wrap .color_chip{ margin-left: 20%; display: inline-block; position: relative; width: 100%;}
+.sub_wrap .color_chip ul{font-size: 15px; position: absolute; width: 100%; bottom: 420px; right: 50px;}
+.sub_wrap .color_chip ul li{position: absolute; top: 236px; left: -60px;}
+.sub_wrap .color_chip ul li:nth-child(1){left: -40px; }
+.sub_wrap .color_chip ul li:nth-child(1):before{content: ''; width: 75px; height: 180px; background: #1A4A10; position: absolute; bottom: 50px; right: -67px;}
+.sub_wrap .color_chip ul li:nth-child(1):after{content: ''; position: absolute; width: 74px; height: 70px; background: #fff; top: -98px; left: -9px; right: 50px; border: 1px solid #b2b2b2;}
+.sub_wrap .color_chip ul li:nth-child(2){left: 60px; }
+.sub_wrap .color_chip ul li:nth-child(2):before{content: ''; width: 75px; height: 180px; background: #F5C120; position: absolute; bottom: 50px; right: -67px; border: 1px solid #b2b2b2;}
+.sub_wrap .color_chip ul li:nth-child(2):after{content: ''; position: absolute; width: 75px; height: 70px; background: #fff; top: -98px;  left: -10px; right: 50px; border: 1px solid #b2b2b2;}
+.sub_wrap .color_chip ul li:nth-child(3){left: 160px;}
+.sub_wrap .color_chip ul li:nth-child(3):before{content: ''; width: 75px; height: 180px; background: #607E0C; position: absolute; bottom: 50px; right: -68px; border: 1px solid #b2b2b2;}
+.sub_wrap .color_chip ul li:nth-child(3):after{content: ''; position: absolute; width: 75px; height: 70px; background: #fff; top: -98px;  left: -9px; right: 50px; border: 1px solid #b2b2b2;}
+.sub_wrap .color_chip ul li:nth-child(4){color: #2c2c2c; position: absolute; top: -70px; left: -50px; font-size: 18px;  white-space: nowrap;}
+.sub_wrap .color_chip p{font-size: 15px; position: absolute; left: -5%; bottom: 100px;}
+.sub_wrap .color_chip li span{position: absolute; top: -70px; left: 22px; z-index: 10; transform: rotate(90deg); font-size: 13px;}
+.sub_wrap .color_chip li span:before{content: ''; position: absolute;
+top: 21px; left: -11px; height: 1px; width: 65px;}
+.sub_wrap .color_chip li:nth-child(1) span:before{content: '';position: absolute; background: #1A4A10; }
+.sub_wrap .color_chip li:nth-child(2) span:before{content: '';position: absolute; background: #F5C120;}
+.sub_wrap .color_chip li:nth-child(3) span:before{content: '';position: absolute; background: #607E0C;}
+
+.sub_wrap .back{position: absolute; right: 0; margin-right: 50px; bottom: 5%; font-size: 15px; color: #646464;
+font-weight: 600; opacity: 0.5;}
+.sub_wrap .back:hover{opacity: 0.8;}
+.sub_wrap .back a i{font-size: 45px; position: absolute; left: -25px; top: -12px;}
