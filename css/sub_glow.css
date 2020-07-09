@@ -14,52 +14,62 @@ a:hover { text-decoration: none;}
 body{font-family: 'Noto Sans KR', sans-serif; font-size: 15px;}
 .wrap {width: 100%; margin: 0 auto;}
 
-
-
 /*--------------------------------------------------------------*/
 
 .glowpick{width: 100%; height: auto; margin: 0 auto;
 overflow: hidden;}
 
-.glowpick .grow_wrap .glow{width: 100%; height: 90vh; background:url(../img/glowpick.png)no-repeat center/cover; position: relative;}
+.glowpick .glow{width: 100%; height: 90vh; background:url(../img/glowpick.png)no-repeat center/cover; position: relative;}
 .glowpick .glow .title{position: absolute; width: 100%; top: 35%; left: 10%;}
 .glowpick .glow .title p{color: #fff; display: inline-block; position: absolute; left: 80%; bottom: 160px;}
 .glowpick .glow .title h3{color: #fff; font-weight: normal; font-size: 25px; left: 10px; position: absolute; top: 55px;}
 .glowpick .glow .title span{font-size: 17px; color: #fff; position: absolute; left: 10px; top: 110px;}
 
-.glowpick .grow_wrap .txt{width: 1400px; position: relative; color: #383838; padding: 30% 0; box-sizing: border-box; overflow: hidden; margin: 0 auto;}
-.glowpick .grow_wrap .txt  h3{position: absolute; top: 13%; left: 10%; font-size: 20px;}
-.glowpick .grow_wrap .txt  h3:before{content: ''; position: absolute; border: 1px solid #c90404; width: 230px; top: 34px;}
-.glowpick .grow_wrap .txt .img{width: 60%; position: absolute; left: 68%;
+.glowpick .txt{width: 1400px; position: relative; color: #383838; padding: 30% 0; box-sizing: border-box; overflow: hidden; margin: 0 auto;}
+.glowpick .txt  h3{position: absolute; top: 13%; left: 10%; font-size: 20px;}
+.glowpick .txt  h3:before{content: ''; position: absolute; border: 1px solid #c90404; width: 230px; top: 34px;}
+.glowpick .txt .img{width: 60%; position: absolute; left: 68%;
 top: 42%;}
 .glowpick .txt .img img{width: 40%;}
 .glowpick .txt  span{position: absolute; top: 18%; left: 10%; font-size: 16px;}
-.glowpick .grow_wrap .txt .color_chip{position: absolute; right: 30%; top: 25%;}
-.glowpick .grow_wrap .txt .color_chip ul{position: relative;}
-.glowpick .grow_wrap .txt .color_chip ul li{position: absolute;}
+.glowpick .txt .color_chip{position: absolute; right: 30%; top: 25%;}
+.glowpick .txt .color_chip ul{position: relative;}
+.glowpick .txt .color_chip ul li{position: absolute;}
 
-.glowpick .grow_wrap .txt .color_chip ul li:nth-child(1) span{white-space: nowrap; font-size: 18px; margin-top: -200px;}
-.glowpick .grow_wrap .txt .color_chip ul li:nth-child(2):before{content: ''; width: 75px; height: 180px; background: #D90000; position: absolute; bottom: -100px; right: -67px;}
-.glowpick .grow_wrap .txt .color_chip ul li:nth-child(2):after{content: ''; position: absolute; width: 73px; height: 70px; background: #fff; top: 70px; left: -8px; right: 50px; border: 1px solid #b2b2b2;}
-.glowpick .grow_wrap .txt .color_chip ul li:nth-child(3):before{content: ''; width: 75px; height: 180px; background: #B60000; position: absolute; bottom: -100px; right: -165px;}
-.glowpick .grow_wrap .txt .color_chip ul li:nth-child(3):after{content: ''; position: absolute; width: 73px; height: 70px; background: #fff; top: 70px; left: 90px; border: 1px solid #b2b2b2;}
-.glowpick .grow_wrap .txt .color_chip ul li:nth-child(4):before{content: ''; width: 75px; height: 180px; background: #fff; position: absolute; bottom: -100px; right: -265px; border: 1px solid #d8d8d8;}
-.glowpick .grow_wrap .txt .color_chip ul li:nth-child(4):after{content: ''; position: absolute; width: 75px; height: 70px; background: #fff; top: 70px; left: 188px; border: 1px solid #d8d8d8;}
+.glowpick .txt .color_chip ul li:nth-child(1) span{white-space: nowrap; font-size: 18px; margin-top: -200px;}
+.glowpick .txt .color_chip ul li:nth-child(2):before{content: ''; width: 75px; height: 180px; background: #D90000; position: absolute; bottom: -100px; right: -67px;}
+.glowpick .txt .color_chip ul li:nth-child(2):after{content: ''; position: absolute; width: 73px; height: 70px; background: #fff; top: 70px; left: -8px; right: 50px; border: 1px solid #b2b2b2;}
+.glowpick .txt .color_chip ul li:nth-child(3):before{content: ''; width: 75px; height: 180px; background: #B60000; position: absolute; bottom: -100px; right: -165px;}
+.glowpick .txt .color_chip ul li:nth-child(3):after{content: ''; position: absolute; width: 73px; height: 70px; background: #fff; top: 70px; left: 90px; border: 1px solid #b2b2b2;}
+.glowpick .txt .color_chip ul li:nth-child(4):before{content: ''; width: 75px; height: 180px; background: #fff; position: absolute; bottom: -100px; right: -265px; border: 1px solid #d8d8d8;}
+.glowpick .txt .color_chip ul li:nth-child(4):after{content: ''; position: absolute; width: 75px; height: 70px; background: #fff; top: 70px; left: 188px; border: 1px solid #d8d8d8;}
 
-.glowpick .grow_wrap .txt .color_chip ul li span{position: absolute; top: 50px; font-size: 14px;}
-.glowpick .grow_wrap .txt .color_chip ul li span:before{content: ''; position: absolute;
+.glowpick .txt .color_chip ul li span{position: absolute; top: 50px; font-size: 14px;}
+.glowpick .txt .color_chip ul li span:before{content: ''; position: absolute;
 top: 21px; left: -10px; height: 1px; width: 65px;}
 
-.glowpick .grow_wrap .txt .color_chip ul li:nth-child(1) span{white-space: nowrap; font-size: 18px; margin-top: -200px;}
-.glowpick .grow_wrap .txt .color_chip ul li:nth-child(2) span{top: 92px; left: 20px; z-index: 10; transform: rotate(90deg);}
-.glowpick .grow_wrap .txt .color_chip ul li:nth-child(2) span:before{content: '';position: absolute; background: #D90000;}
-.glowpick .grow_wrap .txt .color_chip ul li:nth-child(3) span{top: 94px; left: 115px; z-index: 10; transform: rotate(90deg);}
-.glowpick .grow_wrap .txt .color_chip ul li:nth-child(3) span:before{content: '';position: absolute; background: #B60000;}
-.glowpick .grow_wrap .txt .color_chip ul li:nth-child(4) span{top: 103px; left: 214px; width: 60px; 
+.glowpick .txt .color_chip ul li:nth-child(1) span{white-space: nowrap; font-size: 18px; margin-top: -200px;}
+.glowpick .txt .color_chip ul li:nth-child(2) span{top: 92px; left: 20px; z-index: 10; transform: rotate(90deg);}
+.glowpick .txt .color_chip ul li:nth-child(2) span:before{content: '';position: absolute; background: #D90000;}
+.glowpick .txt .color_chip ul li:nth-child(3) span{top: 94px; left: 115px; z-index: 10; transform: rotate(90deg);}
+.glowpick .txt .color_chip ul li:nth-child(3) span:before{content: '';position: absolute; background: #B60000;}
+.glowpick .txt .color_chip ul li:nth-child(4) span{top: 103px; left: 214px; width: 60px; 
 z-index: 10; transform: rotate(90deg);}
-.glowpick .grow_wrap .txt .color_chip ul li:nth-child(4) span:before{content: '';position: absolute; background: #bebebe; left: -14px;}
-.glowpick .grow_wrap .back{position: absolute; right: 0; margin-right: 90px; bottom: -118%; margin-bottom: 60px; font-size: 15px; color: #646464;
+.glowpick .txt .color_chip ul li:nth-child(4) span:before{content: '';position: absolute; background: #bebebe; left: -14px;}
+.glowpick .back{position: absolute; right: 0; margin-right: 90px; bottom: -118%; margin-bottom: 60px; font-size: 15px; color: #646464;
 font-weight: 600; opacity: 0.5;}
-.glowpick .grow_wrap .back:hover{opacity: 0.8;}
-.glowpick .grow_wrap .back a i{font-size: 45px; position: absolute; left: -25px; top: -12px;}
+.glowpick .back:hover{opacity: 0.8;}
+.glowpick .back a i{font-size: 45px; position: absolute; left: -25px; top: -12px;}
+
+/*
+#back_aside{float: right; font-size: 15px; top: 300px;
+padding:10px 50px; position: relative; z-index: 100; color: #b2b2b2; display: none;}
+#back_aside:hover{color: #696969;}
+#back_aside a{display: block; font-weight: bold;}
+#back_aside a i{position: absolute;  left: 25px; font-size: 30px; top: 6px;}
+#back_aside a i:hover{color: #696969;}
+*/
+/*back_aside*/
+#back_aside{float: right; font-size: 15px; position: fixed; 
+color: darkorchid; bottom: 200px;}
 

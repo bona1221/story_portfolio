@@ -42,7 +42,6 @@ header.on:before{width: 100%; height: 100%; border-bottom: 1px solid #838383; tr
 .nav.on{transition: all 0.5s; color: #000; font-weight: bold;}
 
 /*id aside 사이드바*/
-/*id aside 사이드바*/
 #aside {position: absolute; right: 30px; top: 150px; width: 90px; height: 300px; border-radius: 32px; transition: top 0.3s; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
 #aside .icon{font-size: 30px; color: #999; text-align: center; margin-top: 30px;}
 #aside .icon li{margin: 20px 0;}
@@ -88,7 +87,7 @@ margin-left: 11%; font-weight:bold; position: relative;}
 width: 11%; height: 28%; left: -4px; background: #ffe200; top: 33px; z-index: -1;}
 .story_bord p{font-size: 16px; margin-left: 10%; margin-top: 10px;}
 
-.story_bord .story{padding: 80% 10%; margin: 0 auto; position: relative;}
+.story_bord .story{padding: 75% 10%; margin: 0 auto; position: relative;}
 .story_bord .story li{position: relative;}
 .story_bord .story li img{width: 100%; top: 0;}
 .story_bord .story li .page{position: absolute; width: 100%; padding: 30% 0%; bottom: 620px;}

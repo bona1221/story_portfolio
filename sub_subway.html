@@ -24,15 +24,12 @@
         <header>
             <div class="innerheader">
                 <ul class="nav">
+                    <li><a href="about.html">ABOUT</a></li>
                     <li><a href="list.html#webgallery">WEB DESIGN</a></li>
                     <li><a href="list.html#package_gallery">PACKAGRE DESIGN</a></li>
-                    <li><a href="list.html#ulux_gallery">UI UX DESIGN</a></li>
-<!--                    <li><a href="">ETC</a></li>-->
-                    <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="contact.html">CONTECT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
                 </ul>
             </div>
-
             <!--서브웨이용 픽스헤더 자바스크립트 따로 짬-->
             <script>
                 'use strict';
@@ -71,12 +68,49 @@
                         $('header, .nav').removeClass('on');
                     }
                 };
-            </script>   
-            <!--서브웨이용 스크립트 픽스헤더-->   
+            </script>    
+            <!--서브웨이용 스크립트 픽스헤더-->     
             
+            <script>
+                function sideBar() {
+                $('#back_aside').css({
+                'top': (scrollTop + 300) + 'px'});
+                    
+                }
+                
+                var scrollTop = 0;
+                scrollTop = $(document).scrollTop();
+                fixHeader();
+                sideBar();
+                //윈도우창 조절시에 이벤트
+                $(window).on('scroll resize', function() {
+                scrollTop = $(document).scrollTop();
+                fixHeader();
+                sideBar();
+                });
+            </script> 
+            <!--back_aside-->
+            <script>
+                var start_side=$('#back_aside')
+                start_side.animate({opacity"0"}.top:0);
+                start_side.animate({opacity"1"},500);
+            </script>
+            <!--fadein-->
+            <script>
+                $(document).ready(function(){
+                    $('#back_aside').fadeIn(1500);
+                });
+            </script>
         </header>
         <!--header end -->
-
+        
+        <!--back aside-->
+        <aside id="back_aside">
+            <a href="list.html"><span><i class="fa fa-angle-left" aria-hidden="true"></i></span>
+                <p>BACK TO LIST</p>
+            </a>
+        </aside>
+        
         <!--subway-->
         <section class="subway">
             <div class="title">
@@ -114,13 +148,7 @@
                 메뉴들을 저장하여 추천을 도와주고 주문의<br> 순서와
                 미리 주문을 할 수 있도록 구상했습니다</p>
             </div>
-            
-            <div class="back">
-                   <a href="list.html"><span><i class="fa fa-angle-left" aria-hidden="true"></i></span>
-                    <p>BACK TO LIST</p>
-                </a>
-            </div>
-            </section>
+        </section>
         
 <!--
         <section class="another">

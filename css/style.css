@@ -1,4 +1,4 @@
-@charset "utf-8";
+7@charset "utf-8";
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,700&display=swap'); 
 
 /*reset*/
@@ -19,6 +19,7 @@ body{font-family: 'Noto Sans KR', sans-serif; font-size: 15px;}
 .wrap {width: 100%; margin: 0 auto;}
 section{width: 1400px; overflow: hidden;}
 .slick-next{opacity: 0;}
+
 /*header*/
 header{width: 100%; height: 70px; position: fixed; 
 background: #6D6D6D; 
@@ -28,10 +29,10 @@ z-index: 30; opacity: 0.7; overflow: hidden;}
 margin: 0 auto;}
 .innerheader .nav{
 color: #fff; font-weight: normal; }
-.innerheader .nav li{width: 20%; text-align: center; line-height: 70px; float: left;  }
+.innerheader .nav li{width: 20%; text-align: center; line-height: 70px; float: left;  margin-left: 40px;}
 .innerheader .nav li a{display: block;}
 .innerheader .nav li a:hover{color: #9d73f8;}
-
+.gnbMo{display: none;}
 
 /*fixHeader*/
 header.on{transition: all 0.5s;}
@@ -125,14 +126,14 @@ animation-name:bed; animation-duration: 1.7s;}
     100%{opacity: 1;}
 }
 #main .slide li.furniture img:nth-child(4){left: 7%; width: 36%; top: 57%;
-animation-name: tea; animation-duration: 1.5s; z-index: -100;}
+animation-name: tea; animation-duration: 1.5s; z-index: 100;}
 @keyframes tea{
     0%{opacity: 0;}
     30%{opacity: 0;}
     100%{opacity: 1;}
 }
 #main .slide li.furniture img:nth-child(5){left: 19%; width: 45%; top: 61%;
-animation-name: plant; animation-duration: 1s;}
+animation-name: plant; animation-duration: 1s; z-index: 110;}
 @keyframes plant{
     0%{opacity: 0;}
     30%{opacity: 0;}
@@ -237,3 +238,24 @@ a.goTop{display: block; font-size: 50px; color: #777; transform: rotate(180deg);
 .load li.awards.on .spac p:nth-child(2){animation-name: awards; animation-duration: 1.7s; }
 .load li.awards.on .spac p:nth-child(3){animation-name: awards; animation-duration: 1.9s; }
 
+/*-------------------------반응형---------------------------------*/
+/*1599_해상도*/
+@media screen and (max-width:1599px){
+    #main .slide li.furniture{margin-top: 100px;}
+    #main .slide li.furniture img:nth-child(2){top: 10%;}
+    #main .slide li.furniture img:nth-child(3){top: 29%;}
+    #main .slide li.furniture img:nth-child(4){top: 52%;}
+    #main .slide li.furniture img:nth-child(5){top: 57%; left: 23%;}
+    #main .slide li.furniture img:nth-child(6){top: -1%;}
+    #main .slide li.furniture img:nth-child(7){top: 25%;}
+    #main .slide li.workerholic img{top: 250px; left: 0;}
+    #main .main_page h2{left: -52px;}
+    #main .main_page h3{left: -29px;}
+    #main .main_page a{top: 825px; left: 41.2%;}
+    #main .main_page p{padding-top: 80px; }
+    #main .main_page p:after{height: 700px; left: 350px; top: -240px;}
+    #aside .icon li p {font-size: 13px;}
+    #aside{width: 80px;} 
+    .profile #work .skill ul li:nth-child(1) .img img{width: 54%;}
+    a.goTop{right: 10px; bottom: 0;}
+}

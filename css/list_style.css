@@ -52,7 +52,6 @@ animation-duration: }
 #aside .icon li .inner.on{opacity: 1;}
 
 
-
 #webgallery .web_list:before{content: ''; position: absolute; width: 2px; height: 50%; background: #d1d1d1; bottom: 3%; transform: rotate(90deg); margin-left: 50%;}
 #webgallery .web_list ul{overflow: hidden; padding: 8% 7%; box-sizing: border-box;}
 #webgallery .web_list ul li{width: 100%; height: auto; box-sizing: border-box; padding: 0 5%; margin-top: 10%;}
@@ -121,114 +120,71 @@ border-top-right-radius: 30px; bottom: 560px; float: right;}
 
 
 /*----------------------------------------------------------------------------------------------*/
-
-/*package_gallery*/
-#package_gallery{margin: 0 auto; padding: 5% 0;box-sizing: border-box; height: 50vh;}
-#package_gallery .package{position: relative;}
-#package_gallery .package:before{content: ''; position: absolute; width: 2px; height: 250%; background: #d1d1d1; 
-margin-left: 50%; z-index: 10; bottom: -561px; z-index: 200;
-transform: rotate(90deg); color: red;}
-#package_gallery ul{overflow: hidden; padding:2% 7%;
+/*ulux_gallery*/
+#ulux_gallery{margin: 0 auto; padding: 5% 0;box-sizing: border-box; height: 50vh; position: relative;}
+#ulux_gallery .uiux{}
+/*
+#ulux_gallery:before{content: ''; position: absolute; width: 2px; height: 180%; background: #d1d1d1; background: #d1d1d1; 
+margin-left: 50%; z-index: 10; top: 45px; z-index: 200;
+transform: rotate(90deg);}
+*/
+#ulux_gallery ul{overflow: hidden; padding:2% 7%;
 box-sizing: border-box; margin-top: -70px; position: relative;}
-#package_gallery ul li{height: auto; box-sizing: border-box; padding: 0 5%; position: relative;}
-#package_gallery .tit{position: absolute; left: 0; right: 0; bottom: 0; display: block; padding: 5px 22px;  background: #fff; transition: all 500ms; text-decoration: none;}
-#package_gallery .tit p{margin: 7px 0 0; color: #292929;}
-#package_gallery .tit span{color: #999;}
-#package_gallery .tit .brand_story{display: block; padding-top: 10px; width: 50%; overflow: hidden;
+#ulux_gallery ul li{height: auto; box-sizing: border-box; padding: 0 5%; position: relative;}
+#ulux_gallery .tit{position: absolute; left: 0; right: 0; bottom: 0; display: block; padding: 5px 22px;  background: #fff; transition: all 500ms; text-decoration: none;}
+#ulux_gallery .tit p{margin: 7px 0 0; color: #292929;}
+#ulux_gallery .tit span{color: #999;}
+#ulux_gallery .tit .brand_story{display: block; padding-top: 10px; width: 50%; overflow: hidden;
 margin-right: 50%;}
-
-#package_gallery .blooming{float: left; width: 510px; height: 360px; display: block; overflow: hidden; 
+/*.subway*/
+#ulux_gallery .subway{float: left; width: 510px; height: 360px; display: block; overflow: hidden; 
 background: linear-gradient(rgba(227,227,227,1) 0%, rgba(255,255,255,1) 100%); border-top-left-radius:30px;
 box-shadow: 0px 5px 8px 2px rgba(204, 204, 204, 0.62);
 position: relative;}
-#package_gallery .blooming .tit_img{width: 100%; margin: auto;}
-#package_gallery .blooming .tit_img img{width: 75%; position: absolute; left: 20px; top: 20px;}
-#package_gallery .blooming .tit .brand_story{
+#ulux_gallery .subway .tit_img{width: 100%; height: 100%; margin: auto;}
+#ulux_gallery .subway .tit_img img{width: 110%; position: absolute; left: -30px; bottom: 40px}
+#ulux_gallery .subway .tit .brand_story{
 /*
 -webkit-transition: all 500ms eae;
 transition: all 500ms ease;
 */
 }
-
-
-/*child*/
-#package_gallery .child{position: relative; 480px; width: 510px; height: 360px;float: right;
-box-shadow: -1px 5px 8px 2px rgba(204, 204, 204, 0.62); display: block; overflow: hidden; background: linear-gradient(rgb(255, 218, 218) 0%, rgba(255,255,255,1) 100%)fixed; border-top-right-radius: 30px;}
-#package_gallery .child .tit_img{width: 100%; position: relative;}
-#package_gallery .child .tit_img img{position: absolute; width: 85%; left: 5%}
-#package_gallery .tit .child .brand_story{display: block; width: 50%; overflow: hidden;  margin-right: 50%;}
-
-
-
-/*-----------------------------------------------------------------------------------*/
-
-/*ulux_gallery*/
-#ulux_gallery{margin: 0 auto; height: 54vh; position: relative; margin-top: 5px}
-#ulux_gallery:before{content: ''; width: 2%; height: 50%; color: red;}
-#ulux_gallery ul{padding: 7% 9%; box-sizing: border-box; margin-bottom: -3%; margin-top: -40px
-}
-#ulux_gallery ul li{padding:  0 3%;}
-#ulux_gallery .tit{position: absolute; left: 0; right: 0; bottom: 0; display: block; padding: 5px 22px;  background: #fff; transition: all 500ms; text-decoration: none;}
-#ulux_gallery .tit p{color: #292929; display: block; margin-top: 15px;}
-#ulux_gallery .tit span{color: #999; }
-#ulux_gallery .tit .brand_story{display: block; padding-top: 12px; width: 50%; overflow: hidden; margin-right: 50%;}
-
-/*subway*/
-#ulux_gallery .subway{position: relative; float: left; width: 510px; height: 360px; display: block; 
-overflow: hidden; background:#d9d9d9; border-top-left-radius:30px; box-shadow: 0px 5px 8px 2px rgba(204, 204, 204, 0.62);}
-#ulux_gallery .subway .tit_img{width: 100%; margin: auto; position: relative;}
-#ulux_gallery .subway .tit_img img{width: 110%; left: -25px; top:-60px; position: absolute;}
-#ulux_gallery .subway .brand_story{ width: 50%; overflow: hidden;}
-#ulux_gallery .subway .brand_story p{position: absolute; margin-top: 10px; top: 20%;}
-
 /*glow*/
 #ulux_gallery .glow{position: relative; 480px; width: 510px; height: 360px; float: right;
 box-shadow: -1px 5px 8px 2px rgba(204, 204, 204, 0.62); display: block; overflow: hidden; background: linear-gradient(rgb(255, 218, 218) 0%, rgba(255,255,255,1) 100%)fixed; border-top-right-radius: 30px;}
 #ulux_gallery .glow .tit_img{width: 100%; position: relative;}
 #ulux_gallery .glow .tit_img img{position: absolute; width: 100%;}
-#ulux_gallery .glow .brand_story{ width: 50%; overflow: hidden;  margin-right: 50%;}
+#ulux_gallery .tit .glow .brand_story{display: block; width: 50%; overflow: hidden; margin-right: 50%;}
 
 
-/*.etc_gallery*/
-.etc_gallery {width: 100%; margin-top: -30%; }
-.etc_gallery ul{padding: 0% 20%; box-sizing: border-box; box-sizing: border-box; }
-.etc_gallery ul li{width: 100%; height: auto; box-sizing: border-box; padding: 0 5%;  display: block;}
-.etc_gallery .tit{padding: 5px 22px; background: #fff; transition: all 500ms; text-decoration: none; position: absolute; left: 0; right: 0; bottom: 0;}
-.etc_gallery .tit p{margin: 7px 0 0; color: #292929;}
-.etc_gallery .brand_story{color: #999;}
 
-/*poster*/
-.etc_gallery .poster{position: relative; width: 480px; height: 360px;
-display: block; background: #ff9494; border-top-left-radius: 30px; box-shadow: 0px 5px 8px 2px rgba(204, 204, 204, 0.62); float: left;} 
-.etc_gallery .poster .tit_img{width: 100%;}
-.etc_gallery .poster .tit_img img{width: 480px; height:  360px; }
-.etc_gallery .poster .brand_story{padding-top: 10px;}
+/*-----------------------------------------------------------------------------------*/
 
-/*blooming_poster*/
-.etc_gallery .blooming_poster{position: relative; width: 480px; height: 360px; float: right; 
-box-shadow: -1px 5px 8px 2px rgba(204, 204, 204, 0.62); border-top-right-radius: 30px; background: #fff2f2;}
-.etc_gallery .blooming_poster .tit_img{width: 100%; height: 360px; overflow: hidden; position: relative;}
-.etc_gallery .blooming_poster .tit_img img{width: 100%; position: absolute; top: -7%; left: 20%;}
+/*package_gallery*/
+#package_gallery{margin: 0 auto; height: 54vh; position: relative; margin-top: 5px;}
+#package_gallery .package:before{content: ''; width: 2%; height: 50%; color: red;}
+#package_gallery .package ul{padding: 7% 9%; box-sizing: border-box; margin-bottom: -3%; margin-top: -40px
+}
+#package_gallery ul li{padding:  0 3%;}
+#package_gallery .tit{position: absolute; left: 0; right: 0; bottom: 0; display: block; padding: 5px 22px;  background: #fff; transition: all 500ms; text-decoration: none;}
+#package_gallery .tit p{color: #292929; display: block; margin-top: 15px;}
+#package_gallery .tit span{color: #999; }
+#package_gallery .tit .brand_story{display: block; padding-top: 12px; width: 50%; overflow: hidden; margin-right: 50%;}
 
-/*typo*/
-.etc_gallery .typo{position: relative; width: 480px; height: 360px;
-box-shadow: 0px 5px 8px 2px rgba(204, 204, 204, 0.62);
-display: block; overflow: hidden; 
-/*background: linear-gradient(#a3b8ff, rgba(222, 222, 222, 0.81))fixed;*/
-background: #f1f1f1;    
-border-top-left-radius: 30px; margin-top: 50px; float: left;}
-.etc_gallery .typo .tit_img{width: 75%; margin: auto; position: relative;}
-.etc_gallery .typo .tit_img img{width: 65%; position: absolute; left:18%; top: 10px;
-box-shadow: 0px 5px 8px 2px rgba(204, 204, 204, 0.62); border-radius: 5px}
-.etc_gallery .brand_story{display: block; padding-top: 10px; width: 50%;
-overflow: hidden;  margin-right: 50%;}
+/*blooming*/
+#package_gallery .blooming{position: relative; float: left; width: 510px; height: 360px; display: block; 
+overflow: hidden; background:#d9d9d9; border-top-left-radius:30px; box-shadow: 0px 5px 8px 2px rgba(204, 204, 204, 0.62);}
+#package_gallery .blooming .tit_img{width: 100%; margin: auto; position: relative;}
+#package_gallery .blooming .tit_img img{width: 73%; left: 35px; top:30px; position: absolute;}
+#package_gallery .blooming .brand_story{ width: 50%; overflow: hidden;}
+#package_gallery .blooming .brand_story p{position: absolute; margin-top: 10px; top: 20%;}
 
-/*logo*/
-.etc_gallery .logo{position: relative; width: 480px; height: 360px; background: #f1f1f1; float: right; margin-top: 5%; 
-box-shadow: -1px 5px 8px 2px rgba(204, 204, 204, 0.62); display: block; border-top-right-radius: 30px;}
-.etc_gallery .logo .tit_img{width: 50%; overflow: hidden; 
-background: #000;}
-.etc_gallery .logo .tit_img img{width: 100%;}
+/*glow*/
+#package_gallery .child{position: relative; 480px; width: 510px; height: 360px; float: right;
+box-shadow: -1px 5px 8px 2px rgba(204, 204, 204, 0.62); display: block; overflow: hidden; background: linear-gradient(rgb(255, 218, 218) 0%, rgba(255,255,255,1) 100%)fixed; border-top-right-radius: 30px;}
+#package_gallery .child .tit_img{width: 100%; position: relative;}
+#package_gallery .child .tit_img img{position: absolute; width: 100%;}
+#package_gallery .child .brand_story{ width: 50%; overflow: hidden;  margin-right: 50%;}
 
 
 

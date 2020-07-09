@@ -65,7 +65,7 @@ $(function(){
 });
 
 //사이드바 함수
-//고정헤더, 사이드바 이벤트
+//고정헤더, 사이드바 이벤트 list
 var scrollTop = 0;
 scrollTop = $(document).scrollTop();
 fixHeader();
@@ -91,6 +91,21 @@ $(function(){
     });
 });
 
+//서브웨이,글로우픽_ui.ux 사이드바
+//function sideBar() {
+//    $('#back_aside').css({'top': (scrollTop + 150) + 'px'});
+//}
+
+var scrollTop = 0;
+scrollTop = $(document).scrollTop();
+fixHeader();
+sideBar();
+//윈도우창 조절시에 이벤트
+$(window).on('scroll resize', function() {
+    scrollTop = $(document).scrollTop();
+    fixHeader();
+    sideBar();
+        });
 
 //-------------------------------------------------------------------//
 //list 호버시 내용이 올라감
