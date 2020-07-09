@@ -1,0 +1,82 @@
+@charset"utf8";
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700&display=swap');
+
+/*reset*/
+* {margin: 0; padding: 0;}
+
+li {list-style: none;}
+
+a {color: inherit; text-decoration: none;}
+
+/*layout*/
+.en {font-family: 'Noto Sans KR', sans-serif;}
+
+body {font-family: 'Noto Sans KR', sans-serif;}
+
+wrap {width: 100%; margin: 0 auto; background: #000;
+overflow: hidden;}
+section{1400px;}
+
+/*layout*/
+header {width: 100%;  position: fixed; background: rgba(255, 255, 255, 0); border-bottom: 1px solid rgba(255, 255, 255, 0.24);}
+header .innerHeader {width: 1400px; height: 80px; margin: 0 auto;
+position: relative;}
+header .innerHeader h1.logo {display: inline-block; position: absolute;
+left: 50%; top: 50%; transform: translate(-50% , -50%);}
+header .innerHeader .logo a {display: block;}
+header .innerHeader .logo img {width: 70px;}
+header .innerHeader .service{float: right; color: #fff;}
+header .innerHeader .service li{float: left; padding: 20px; margin-top: 8px;}
+header .innerHeader .cate{float: right; margin-right: 160px; color: #fff;}
+header .innerHeader .cate li{float: left; padding: 5px 90px; margin-top: 20px;}
+header .innerHeader .cate li:nth-child(1){padding: 5px 10px;}
+header .innerHeader .cate li:nth-child(4){padding: 5px 10px;}
+
+/*main*/
+.main{width: 100%; height: 100%;}
+.main img{}
+
+/*shop*/
+.shop{width: 100%; position: relative; overflow: hidden; background: #000; margin: 0 auto;
+margin-top: -20px;}
+.shop .nike_shop{width: 80%; height: 50vh; margin: 0 auto;text-align: center; background: rgba(255, 0, 0, 0.33);}
+.shop .nike_shop h2{color: #fff; position: relative; display: inline-block; margin-top: 35px;
+font-size: 24px;}
+.shop .nike_shop > p{color: #fff; font-size: 16px; margin-top: 30px;}
+.shop .nike_shop h2:before{content: ''; position: absolute; width: 130px; height: 90px; bottom: -8px; border-bottom: 1px solid #fff; text-align: center;}
+.shop .nike_shop ul{padding: 30px 20px; overflow: hidden; margin-top: 10px;
+box-sizing: border-box;}
+.shop .nike_shop ul li{float: left; position: relative; left: 35%; right: 50%; transform: translate(-80%,-10%); padding: 0 10px; margin-top: 10px;}
+.shop .nike_shop ul li a{display: block; padding: 30px;}
+.shop .nike_shop ul li a h3{color: #6c00ff; display: inline-block; font-size: 25px; position: absolute; left: 50%; right: 4%; transform: translate(-50%,-50%); top: 50%; font-weight: 500;}
+.shop .nike_shop ul li a:hover h3{color: #fff; transition: 0.3s;}
+.shop .nike_shop ul li a .img{ width: 250px; height: 250px; border-radius: 50%; overflow: hidden; background: #ffb100; position: relative;}
+.shop .nike_shop ul li a .img:before{content: '';position: absolute; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.53);}
+.shop .nike_shop ul li a:hover img{width: 100%; transition: all 1s;}
+
+/*shoose*/
+.shoose .shoose_wrap{width: 50%; height: 40vh; background: rgba(226, 0, 255, 0.29); position: relative;  padding: 30% 0; overflow: hidden;}
+.shoose .shoose_wrap .nike_left{ width: 100%; height: 80vh; position: relative;  background: #000;
+position: absolute; top: 0; overflow: hidden;}
+.shoose .nike_left h2{font-size: 50px; color: #fff; z-index: 100;
+top: 75px; left: 350px; position: relative;}
+.shoose .shoose_wrap .nike_left h2:before{content: ''; position: absolute;color: #ffffff; border: 1px solid; width: 600px; bottom: 0; margin-bottom: 15px;}
+.shoose .shoose_wrap .nike_left .left_img{position: relative; width: 100%; height: 100%;}
+.shoose .shoose_wrap .nike_left .left_img img{position: absolute;}
+.shoose .shoose_wrap .nike_left .left_img img:first-child{width: 100%; top: -75px;}
+.shoose .shoose_wrap .nike_left .left_img img:last-child{left: 100px; width: 70%; top: 15%;}
+.shoose .shoose_wrap .left_txt{width: 50%; height: 20vh; background: #020034; text-align: center; position: relative; padding: 60px 77px; left: 323px; margin-top: 20%}
+.shoose .shoose_wrap .nike_left span{position: absolute; font-size: 80px; font-weight: 500;
+right: 0; top: 300px; z-index: 100; color: #fff;}
+.shoose .shoose_wrap .left_txt .txt{position: absolute; padding: 60px 0px; right: 50px; top: 17px;}
+.shoose .shoose_wrap .left_txt .txt p{padding:25px 0; font-size: 15px; color: #fff; margin-bottom: 30px;}
+.shoose .shoose_wrap .left_txt .txt h3{font-size: 25px; color: #fff;}
+.shoose .shoose_wrap .left_txt .txt a{padding: 10px 30px; background: rgba(0, 0, 0, 0);
+border: 2px solid #fff; border-radius: 50px; color: #fff;}
+.shoose .shoose_wrap .nike_left_bottom{padding:70px 85px; position: absolute; right: 0;
+bottom: 8x; background: #484848; overflow: hidden;}
+.shoose .shoose_wrap .nike_left_bottom img{position: absolute; top: 0; width: 100%; left: 0;}
+.shoose .shoose_wrap .nike_left_bottom .txt{margin-top: 220px; float: left;
+color: #fff;}
+.shoose .shoose_wrap .nike_left_bottom .txt p{padding: 20px 0;}
+.shoose .shoose_wrap .nike_left_bottom .txt a{position: absolute; left: 44%; padding: 10px 30px; border: 1px solid #fff; border-radius: 50px;}
