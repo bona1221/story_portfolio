@@ -179,7 +179,7 @@ position: absolute; right: 15%; top: 50%}
     30%{opacity: 0;}
     100%{opacity: 1;}
 }
-<<<<<<< HEAD
+/*<<<<<<< HEAD*/
 
 /*cruzrone*/
 .cruzrone{padding: 200px 0; width: 100%; height: 21vh; margin: 0 auto; background: #0f0e0e; position: relative; color: #fff; overflow: hidden;}
@@ -304,4 +304,4 @@ footer .korea ul li{padding: 2px;}
 footer .korea h2{font-size: 15px;}
 footer .korea i{padding-right: 10px; font-size: 17px;}
 
->>>>>>> parent of 55286db... Revert "나이키_레이아웃완성"
+/*>>>>>>> parent of 55286db... Revert "나이키_레이아웃완성"*/
