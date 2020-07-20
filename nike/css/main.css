@@ -100,7 +100,7 @@ box-sizing: border-box;}
 /*shoose*/
 .shoose{width: 100%; overflow: hidden;}
 .shoose .shoose_wrap{width: 100%; height: 80vh;  position: relative; background: #0f0e0e;}
-.shoose .shoose_wrap .nike_left{width: 100%; height: 80vh; position: absolute; top: 0; overflow: hidden; z-index: 300;}
+.shoose .shoose_wrap .nike_left{width: 50%; height: 80vh; position: absolute; top: 0; overflow: hidden; z-index: 300;}
 .shoose .nike_left h2{font-size: 50px; color: #fff; z-index: 100;
 top: 75px; left: 350px; position: relative;}
 .shoose .shoose_wrap .nike_left h2:before{content: ''; position: absolute; color: #ffffff; border: 1px solid; width: 608px;  bottom: 0; margin-bottom: 15px; z-index: 200;}
@@ -136,44 +136,49 @@ animation-duration: 1.3s;}
 }
 
 /*nike_right*/
-.shoose .shoose_wrap .nike_right.on{float: right; padding: 70px 125px; background: #212121; position: absolute; right: 324px; top: 0; color: #fff; z-index: 100; animation-name: nike_right; animation-duration: 1s;}
+.shoose .shoose_wrap .nike_right.on{width: 50%; height: 80vh; background: red; float: right; position: relative; }
+
+.shoose .shoose_wrap .nike_right.on .airmax{width:60%; height: 50%; background: #212121; position: absolute; left: 0px; top: 0; color: #fff; z-index: 100; animation-name: nike_right; animation-duration: 1s;}
 @keyframes nike_right{
     0%{opacity: 0;}
     30%{opacity: 0;}
     100%{opacity: 1;}
 }
-.shoose .shoose_wrap .nike_right h2{text-align: center; font-size: 30px;}
-.shoose .shoose_wrap .nike_right h3{text-align: center; padding: 10px; font-size: 15px;}
-.shoose .shoose_wrap .nike_right p{line-height: 1.6; padding: 5px 0;
-padding-bottom: 35px; font-size: 16px; text-align: center;}
-.shoose .shoose_wrap .nike_right a{padding: 10px 35px; margin-left: 120px; border-radius: 50px; border: 1px solid #fff;}
+.shoose .shoose_wrap .nike_right .airmax h2{text-align: center; font-size: 30px; margin-top: 55px;}
+.shoose .shoose_wrap .nike_right .airmax h3{text-align: center; padding: 10px; font-size: 15px; box-sizing: border-box; }
+.shoose .shoose_wrap .nike_right .airmax p{line-height: 1.6; padding: 5px 0;
+ font-size: 16px; text-align: center;  margin-bottom: 25px;}
+.shoose .shoose_wrap .nike_right .airmax a{padding: 10px 35px; margin-left:50%; transform: translate(-50%,-50%);position: absolute;border-radius: 50px; border: 1px solid #fff; }
 
 /*spring*/
-.shoose .shoose_wrap .spring{float: right; color: #fff; width: 50%; height: 40vh;
-text-align: center; z-index: 100; margin-right: 17%; position: absolute; right: 0;
-overflow: hidden; top: 50%;background: url(../img/below_02.jpg); background-size: cover;}
+.shoose .shoose_wrap .nike_right.on .spring{ color: #fff; width: 60%; height: 50%;
+text-align: center; z-index: 100;position: absolute; top: 50%; left:0px; 
+overflow: hidden; background: url(../img/below_02.jpg)no-repeat center/cover;}
+.shoose .shoose_wrap .block{width: 100%; height: 100%; position: relative;}
+.shoose .shoose_wrap .spring.on .block:hover h2{color: red;}
 /*
 .shoose .shoose_wrap .spring .img{width: 100%; height: 100%; float: right; background: #6c00ff;}
 .shoose .shoose_wrap .spring img{width: 100%; height: 100%;}
 */
 .shoose .shoose_wrap .spring:before{content: ''; position: absolute; background: rgba(0, 0, 0, 0.3); width: 900px; height: 900px; left: 55%; transform: translate(-50% ,-40%);}
-.shoose .shoose_wrap .spring.on h2{font-size: 30px; top:25%; left: 40%; transform: translate(-50% -50%);position: absolute; animation-name: spring_tit; animation-duration: 1.1s; position: absolute;
-right: 0;}
+.shoose .shoose_wrap .spring.on h2{font-size: 30px; transform: translate(-50%,-50%);left: 40%; position: absolute; animation-name: spring_tit; animation-duration: 1.1s;}
 @keyframes spring_tit {
     0%{opacity: 0; left: 100%;}
     30%{opacity: 0; left: 100%;}
     100%{opacity: 1; left: 40%;}
 }
+
+/*.shoose .shoose_wrap .spring.on:hover h2{color: red;}*/
+
 .shoose .shoose_wrap:hover .spring:before{opacity: 0;}
-.shoose .shoose_wrap .spring.on h3{padding: 10px; animation-name: sping_sub; animation-duration: 1.2s;
-position: absolute; right: 20%; top: 35%;}
+.shoose .shoose_wrap .spring.on h3{padding: 10px; animation-name: sping_sub; animation-duration: 1.2s; }
 @keyframes sping_sub {
     0%{opacity: 0;}
     30%{opacity: 0;}
     100%{opacity: 1;;}
 }
 .shoose .shoose_wrap .spring.on p{font-size: 17px; animation-name: sping_p; animation-duration: 1.3s;
-position: absolute; right: 15%; top: 50%}
+ }
 @keyframes sping_p {
     0%{opacity: 0;}
     30%{opacity: 0;}
