@@ -179,6 +179,7 @@ position: absolute; right: 15%; top: 50%}
     30%{opacity: 0;}
     100%{opacity: 1;}
 }
+<<<<<<< HEAD
 
 /*cruzrone*/
 .cruzrone{padding: 200px 0; width: 100%; height: 21vh; margin: 0 auto; background: #0f0e0e; position: relative; color: #fff; overflow: hidden;}
@@ -240,3 +241,67 @@ footer .korea ul{margin-left: 22%;}
 footer .korea ul li{padding: 2px;}
 footer .korea h2{font-size: 15px;}
 footer .korea i{padding-right: 10px; font-size: 17px;}
+=======
+
+/*cruzrone*/
+.cruzrone{padding: 200px 0; width: 100%; height: 21vh; margin: 0 auto; background: #0f0e0e; position: relative; color: #fff; overflow: hidden;}
+.cruzrone .cruzr.on{padding:50px 30px; background: #00003b; display: inline-block; position: absolute; top: 0; left: 412px; margin-top: -8px; animation-name: cruzr; animation-duration: 1s; z-index: 100;}
+@keyframes cruzr{
+    0%{opacity: 0; left: -550px;}
+    30%{opacity: 0; left: -550px;}
+    100%{opacity: 1; left: 412px;}
+}
+.cruzrone .cruzr h2{text-align: center; font-size: 25px; margin-top: -5px;}
+.cruzrone .cruzr p{padding: 20px 0; font-size: 15px;}
+.cruzrone .cruzr a{display: block; font-size: 15px; margin-left: 220px; margin-top: 10px;
+display: inline-block; position: relative;}
+.cruzrone .cruzr a:before{content: ''; position: absolute; width: 130px; height: 40px;
+border: 1px solid #fff; border-radius: 50px; right: -40px; top: -9px;}
+
+/*bubble*/
+.cruzrone .bubble.on{display: inline-block; margin-left: 21.7%; margin-top: -2%; 
+background-size: cover; animation-name: bubble; animation-duration: 1.1s;}
+@keyframes bubble{
+    0%{opacity: 0; margin-left: -30%;}
+    30%{opacity: 0;  margin-left: -30%;}
+    100%{opacity: 1;  margin-left: 21.7%;}
+}
+.cruzrone .bubble .img{overflow: hidden; margin-top: 40px; width: 100%; height: 100%;}
+.cruzrone .bubble .img img{width: 100%; }
+.cruzrone .bubble .txt{background: #212121; padding: 45px 49px; margin-top: -10px;}
+.cruzrone .bubble .txt h2{margin-top: -20px; padding-bottom: 10px;}
+.cruzrone .bubble .txt p{font-size: 15px; padding-bottom: 25px;}
+.cruzrone .bubble .txt a{font-size: 15px; display: block; text-align: center; position: relative;}
+.cruzrone .bubble .txt a:before{content: ''; position: absolute; width: 130px; height: 40px; border-radius: 50px; margin-top: 26px; left: 50%; right: 50%; transform: translate(-50% , -75%); border: 1px solid #fff;}
+
+/*right_below*/
+.cruzrone .right_below{overflow: hidden;  width: 50%; height: 604px; background: url(../img/below.jpg); margin-bottom: -50%; position: absolute; left: 50.5%; top: 0%; 
+background-position: center;}
+.cruzrone .right_below.on img{position: absolute; left: 50%; right: 50%; transform: translate(-50% , -50%); top: 430px; width: 50%; animation-name: img; animation-duration: 1.3s;}
+@keyframes img{
+    0%{opacity: 0; top: 650px;}
+    30%{opacity: 0; top: 650px;}
+    100%{opacity: 1;  top: 430px;}
+}
+
+/*footer*/
+footer{background: #0f0e0e; width: 100%; height: 50vh; float: right;  overflow: hidden; position: relative; color: #fff;}
+footer:before{content: ''; position: absolute; border: 1px solid #1a1a1a; width: 100%;}
+footer .basic_point{ float: left; display: inline-block; margin-left: 25%; padding: 50px 60px;}
+footer .basic_point .basic{float: left; font-weight: bold; padding:0 100px;}
+footer .basic_point .basic li{padding: 8px 0; font-size: 13px;}
+footer .basic_point .information{float: left; padding: 0 50px; padding: 0 100px;}
+footer .basic_point .information li h2{font-size: 14px;}
+footer .basic_point .information li{padding: 3px 0; font-size: 13px; font-weight: 100; font-size: 13px;}
+footer .basic_point .about_nike{float: left; padding:0 100px;}
+footer .basic_point .about_nike li h2{font-size: 13px;}
+footer .basic_point .about_nike li:nth-child(2){padding: 5px 0; font-weight: 100;}
+
+footer .korea{position: absolute; bottom: 5%; background: #0f0e0e; width: 100%;}
+footer .korea ul:before{content: ''; position: absolute; border: 1px solid #3e3e3e; width: 100%; left: 0; top: -20px;}
+footer .korea ul{margin-left: 22%;}
+footer .korea ul li{padding: 2px;}
+footer .korea h2{font-size: 15px;}
+footer .korea i{padding-right: 10px; font-size: 17px;}
+
+>>>>>>> parent of 55286db... Revert "나이키_레이아웃완성"
