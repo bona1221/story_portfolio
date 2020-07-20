@@ -259,3 +259,6 @@ a.goTop{display: block; font-size: 50px; color: #777; transform: rotate(180deg);
     .profile #work .skill ul li:nth-child(1) .img img{width: 54%;}
     a.goTop{right: 10px; bottom: 0;}
 }
+
+/*1024 태블릿모드*/
+@media screen and (max-width:1024px){}
