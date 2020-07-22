@@ -149,12 +149,12 @@ position: relative;}
 transition: all 500ms ease;
 */
 }
-/*glow*/
-#ulux_gallery .glow{position: relative; 480px; width: 510px; height: 360px; float: right;
+/*funiture*/
+#ulux_gallery .funiture{position: relative; 480px; width: 510px; height: 360px; float: right;
 box-shadow: -1px 5px 8px 2px rgba(204, 204, 204, 0.62); display: block; overflow: hidden; background: linear-gradient(rgb(255, 218, 218) 0%, rgba(255,255,255,1) 100%)fixed; border-top-right-radius: 30px;}
-#ulux_gallery .glow .tit_img{width: 100%; position: relative;}
-#ulux_gallery .glow .tit_img img{position: absolute; width: 100%;}
-#ulux_gallery .tit .glow .brand_story{display: block; width: 50%; overflow: hidden; margin-right: 50%;}
+#ulux_gallery .funiture .tit_img{width: 100%; position: relative;}
+#ulux_gallery .funiture .tit_img img{position: absolute; width: 100%;}
+#ulux_gallery .tit .funiture .brand_story{display: block; width: 50%; overflow: hidden; margin-right: 50%;}
 
 
 

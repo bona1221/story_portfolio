@@ -113,7 +113,7 @@ $(window).on('scroll resize', function() {
 $(document).ready(function () {
     $(".brand_story").css("height", "0px");
 
-    $(".whawhae, .debang, .whyshudio, .korea, .hanhwa, .nike, .blooming, .child, .subway, .glow, .poster, .blooming_poster, .typo, .logo").hover(
+    $(".whawhae, .debang, .whyshudio, .korea, .hanhwa, .nike, .blooming, .child, .subway, .funiture, .poster, .blooming_poster, .typo, .logo").hover(
         function () {
             var target_height = $(this).attr("data-height");
             $(this).find(".brand_story").animate({
@@ -138,7 +138,7 @@ $(document).ready(function () {
 ////https://www.firmalt.com/
 
 
-//scroll evevnt _ explain animation (한국소비자원 에니메이션)
+//scroll evevnt _ explain animation (한국소비자원 에니메이션)_프로필부분 리스트 한번만 움직임
 $(function(){
     var scrollTop = 0;
     //스크롤 이벤트 적용
@@ -161,7 +161,7 @@ function ani(selctor) {
       var minShow = $selector.offset().top - $(window).height();//offset선택한 요소의 좌표를 가져옴
       var maxShow = $selector.offset().top + $selector.outerHeight();
       //리무브 클레스를 주면 이벤트가 지원져서 스크롤 할때마다 이벤트가 나타남
-      $selector.removeClass('down on up');
+//      $selector.removeClass('down on up'); <이서 지우면 한번만 효과 나타남
       //이벤트 붙이기
       if (scrollTop < minShow) {
         $selector.addClass('down');
