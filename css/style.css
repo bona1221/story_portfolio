@@ -22,11 +22,15 @@ section{width: 1400px; overflow: hidden;}
 
 /*header*/
 header{width: 100%; height: 70px; position: fixed; 
-background: #6D6D6D; 
-z-index: 30; opacity: 0.7; overflow: hidden;}
+background: #6D6D6D; z-index: 30; opacity: 0.7; overflow: hidden;}
+header .innerheader_logo{width: 170px; height: 100%;
+display: inline-block; margin-left: 10%;z-index: 500;}
+header .innerheader_logo .logo a{margin-left: 10px;}
+header .innerheader_logo .logo a img{width: 150px;}
+
 .innerheader{z-index: 50; width: 1000px;  height: 70px; 
-/*background: #555;*/
-margin: 0 auto;}
+/*background: #555; */
+float: right; margin-right: 20%; opacity: 1;}
 .innerheader .nav{
 color: #fff; font-weight: normal; }
 .innerheader .nav li{width: 20%; text-align: center; line-height: 70px; float: left;
@@ -166,8 +170,7 @@ animation-name: plant; animation-duration: 1s; z-index: 110;}
 .profile #work{ position: relative; padding: 11% 0; box-sizing: border-box;}
 .profile #work .skill{position: absolute; top: 10%; left: 28%;}
 .profile #work .skill:before{content: ''; position: absolute; width: 240px; height: 240px; background: rgba(255, 206, 0, 0.21); border-radius: 100%; left: -10px; top: 10px;}
-.profile #work .skill .profile_img img:nth-child(1){position: absolute; right: 26%; top: 20%; width: 8%;}
-.profile #work .skill .profile_img img:nth-child(2){position: absolute; width: 35%; left: -5%;
+.profile #work .skill .profile_img img:nth-child(1){position: absolute; width: 35%; left: -5%;
 border-radius: 100%;}
 .profile #work h3{position: absolute;  top: 70px; right: 31%; display: inline-block; font-size: 20px;}
 .profile #work .skill ul{text-align: center; padding: 5% 0;float: left; margin-left: 45%; margin-top: 15%; width: 100%;}
@@ -243,24 +246,32 @@ a.goTop{display: block; font-size: 50px; color: #777; transform: rotate(180deg);
 /*-------------------------반응형---------------------------------*/
 /*1599_해상도*/
 @media screen and (max-width:1599px){
-    #main .slide li.furniture{margin-top: 100px;}
-    #main .slide li.furniture img:nth-child(2){top: 10%;}
-    #main .slide li.furniture img:nth-child(3){top: 29%;}
-    #main .slide li.furniture img:nth-child(4){top: 52%;}
-    #main .slide li.furniture img:nth-child(5){top: 57%; left: 23%;}
-    #main .slide li.furniture img:nth-child(6){top: -1%;}
-    #main .slide li.furniture img:nth-child(7){top: 25%;}
-    #main .slide li.workerholic img{top: 250px; left: 0;}
-    #main .main_page h2{left: -52px;}
-    #main .main_page h3{left: -29px;}
+    #main{width: 100%; height: 130vh;}
+    #main .slide li.furniture{margin-top: 100px; width: 100%; height: 800px;}
+    #main .slide li.furniture img:nth-child(1){top: 5%;}/*light*/
+    #main .slide li.furniture img:nth-child(2){top: 7%;}/*desk*/
+    #main .slide li.furniture img:nth-child(3){top: 29%; }/*bed*/
+    #main .slide li.furniture img:nth-child(4){top: 55%;}/*tea*/
+    #main .slide li.furniture img:nth-child(5){top: 60%; left: 23%;}/*식물*/
+    #main .slide li.furniture img:nth-child(6){top: 1%;}/*cilcle*/
+    #main .slide li.furniture img:nth-child(7){top: 25%;}/*cilcle small*/
+    #main .slide li.workerholic img{top: 250px; left: 0;}/*시람*/
+    #main .main_page h2{left: -110px;}
+    #main .main_page h3{left: -90px;}
     #main .main_page a{top: 825px; left: 41.2%;}
-    #main .main_page p{padding-top: 80px; }
-    #main .main_page p:after{height: 700px; left: 350px; top: -240px;}
+    #main .main_page p{padding-top: 120px;}
+    #main .main_page p:after{height: 600px; left: 290px; top: -145px;}
     #aside .icon li p {font-size: 13px;}
     #aside{width: 80px;} 
     .profile #work .skill ul li:nth-child(1) .img img{width: 54%;}
     a.goTop{right: 10px; bottom: 0;}
+    #main .main_page .scroll i{position: absolute; left: -25px; top: -75px;}
+    .load .life ul{height: 180vh;}
+    .load {height: 180vh;}
+    .load .life ul.explain{height: 180vh;}
 }
 
 /*1024 태블릿모드*/
-@media screen and (max-width:1024px){}
+@media screen and (max-width:1024px){
+    
+}
