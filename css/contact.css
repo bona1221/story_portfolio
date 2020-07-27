@@ -69,10 +69,13 @@ border-radius: 100%; background: rgba(255, 206, 0, 0.21); left: 32%; top: 20%; z
 .contact .ending .tell{padding: 5% 0; width: 100%;}
 .contact .ending .tell h2{font-size: 65px; white-space: nowrap; margin-top: -50px;}
 .contact .ending .tell p{font-size: 20px; margin-left: 10px; color: #838383;}
-.contact .ending h3{font-size: 23px; margin-bottom: 30px;}
-.contact .ending .infomation span{font-size: 15px;font-weight: normal; display: block; line-height: 1.9; font-size: 16px; color: #535353;}
-.contact .ending .infomation span:nth-child(2){font-size: 18px; font-weight: bold;}
-.contact .ending .infomation span:nth-child(3){font-size: 18px; font-weight: bold;}
+.contact .ending h3{font-size: 23px; margin-bottom: 30px; margin-left: 20%;}
+.contact .ending .infomation{width: 100%; height: 30vh;}
+.contact .ending .infomation ul{font-size: 15px;font-weight: normal; display: inline-block; line-height: 1.9; font-size: 16px; color: #535353;float: right; margin-top: -6%; margin-right: 20%;}
+.contact .ending .infomation ul li{padding: 7px 0;}
+.contact .ending .infomation li:nth-child(1){padding-top: 0; font-size: 20px;}
+.contact .ending .infomation li:nth-child(2){font-size: 18px; font-weight: bold;}
+.contact .ending .infomation li:nth-child(3){font-size: 18px; font-weight: bold;}
 .contact .ending .infomation a {display: block; width: 150px; height: 50px; background: #c4a9ff; white-space: nowrap; color: #fff; border-radius: 8px; font-size: 18px; position: relative;
 padding-top: 18px; padding-left: 15px; float: right; margin-right: 45px; margin-top: -65px;}
 .contact .ending .infomation a:hover{background: #7557b4;}
