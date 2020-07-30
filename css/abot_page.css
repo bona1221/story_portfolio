@@ -53,7 +53,7 @@ animation-duration: }
 }
 .about_top .about .tit_message{}
 .about_top .about .video{overflow: hidden;}
-.about_top .about{}
+.about_top .about{ width: 100%;}
 .about_top .about .tit_message h2{font-size: 55px; color: #000;
 margin-left: 11%; font-weight:bold; position: relative;}
 .about_top .about .tit_message h2:before{content: ''; position: absolute; width: 13%; height: 28%; left: -20px; top: 33px; background: #ffe200; z-index: -1;}

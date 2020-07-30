@@ -50,7 +50,7 @@ animation-duration: }
 #main{width: 100%; height: 100vh; position: relative;}
 #main .main_page {position: relative; left: 48%;}
 #main .main_page h2{font-size: 140px; position: absolute; top: 390px; left: 0; z-index: 100;}
-#main .main_page h3{font-size: 25px; font-weight: normal; position: absolute; top: 580px; left: 20px; border-top: 2px solid #888;}
+#main .main_page h3{font-size: 25px; font-weight: normal; position: absolute; top: 500px; left: 20px; border-top: 2px solid #888;}
 #main .main_page p{position: absolute; font-size: 18px; left: 39%; transform: rotate(90deg); top: 185px;}
 #main .main_page p:after{position: absolute; content: ''; transform: rotate(90deg); width: 1px; height: 800px; top: -362px; left: 400px; background: #555;}
 #main .main_page .scroll i{position: absolute; font-size: 50px; color: #777; left: 90.6%; top: 95%;}
@@ -87,9 +87,16 @@ animation-duration: }
     transform: translateY(-30px); } 
 }
 
-#main .slide li.furniture{position: relative; height: 101vh;}
-#main .slide li.furniture img{position: absolute; top: 60px;}
+#main .slide li.furniture{position: relative; height: 101vh; width: 50%;}
+#main .slide li.furniture img{position: absolute; top: 60px; left: 8%;
+width: 70%; animation-name: funiture; animation-duration: 1s;}
+@keyframes funiture{
+    0%{opacity: 0;}
+    30%{opacity: 0;}
+    100%{opacity: 1;}
+}
 
+/*
 #main .slide li.furniture img:nth-child(1){width: 75%; left: 4%;
 animation-name:light; animation-duration: 3s;}
 @keyframes light{
@@ -126,13 +133,14 @@ animation-name: plant; animation-duration: 1s; z-index: 110;}
     30%{opacity: 0;}
     100%{opacity: 1;}
 }
-#main .slide li.furniture img:nth-child(6){width: 46%; top:65px; left: 0%; z-index: -1; animation-name: big_color; animation-duration: 3.1s;}
+*/
+#main .slide li.furniture img:nth-child(1){width: 46%; top:68px; left: 0%; z-index: -1; animation-name: big_color; animation-duration: 1.5s;}
 @keyframes big_color{
     0%{opacity: 0;}
     30%{opacity: 0;}
     100%{opacity: 1;}
 }
-#main .slide li.furniture img:nth-child(7){width: 14%; top:30%; left: 63%; z-index: -1; animation-name: small_color; animation-duration: 3.2s;}
+#main .slide li.furniture img:nth-child(2){width: 14%; top:30%; left: 63%; z-index: -1; animation-name: small_color; animation-duration: 1.6s;}
 @keyframes small_color{
     0%{opacity: 0;}
     30%{opacity: 0;}
@@ -230,13 +238,6 @@ a.goTop{display: block; font-size: 50px; color: #777; transform: rotate(180deg);
 @media screen and (max-width:1599px){
     #main{width: 100%; height: 130vh;}
     #main .slide li.furniture{margin-top: 100px; width: 100%; height: 800px;}
-    #main .slide li.furniture img:nth-child(1){top: 5%;}/*light*/
-    #main .slide li.furniture img:nth-child(2){top: 7%;}/*desk*/
-    #main .slide li.furniture img:nth-child(3){top: 29%; }/*bed*/
-    #main .slide li.furniture img:nth-child(4){top: 55%;}/*tea*/
-    #main .slide li.furniture img:nth-child(5){top: 60%; left: 23%;}/*식물*/
-    #main .slide li.furniture img:nth-child(6){top: 1%;}/*cilcle*/
-    #main .slide li.furniture img:nth-child(7){top: 25%;}/*cilcle small*/
     #main .slide li.workerholic img{top: 250px; left: 0;}/*시람*/
     #main .main_page h2{left: -110px;}
     #main .main_page h3{left: -90px;}
@@ -254,6 +255,6 @@ a.goTop{display: block; font-size: 50px; color: #777; transform: rotate(180deg);
 }
 
 /*1024 태블릿모드*/
-@media screen and (max-width:1024px){
+@media screen and (max-width::;24px){
     
 }

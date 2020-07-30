@@ -102,7 +102,7 @@ position: relative; width: 510px; height: 360px;
 display: block; overflow: hidden; 
 border-top-left-radius: 30px;}
 #webgallery .web_list .nike .tit_img{width: 100%; margin: auto; position: relative;}
-#webgallery .web_list .nike .tit_img img{width:130%; position: absolute; left:-5%;
+#webgallery .web_list .nike .tit_img img{width:130%; position: absolute;
 top: 20; overflow: hidden;}
 #webgallery .web_list .brand_story{display: block; padding-top: 10px; width: 50%;
 overflow: hidden;  margin-right: 50%;}

@@ -181,7 +181,7 @@ top: 40%;}
 /*<<<<<<< HEAD*/
 
 /*cruzrone*/
-.cruzrone{width: 100%; height: 75vh; background: #0f0e0e; position: relative; color: #fff;}
+.cruzrone{width: 100%; height: 80vh; background: #0f0e0e; position: relative; color: #fff;}
 .cruzrone .cruzr{width: 30%; height: 45%; background: #100043; position: absolute; right: 50%;
 }
 .cruzrone .cruzr .cruzr_top{text-align: center; margin-top: 13%; font-size: 16px;}
@@ -190,15 +190,15 @@ top: 40%;}
 .cruzrone .cruzr .cruzr_top a{font-size: 17px; padding: 10px 30px; border-radius: 50px; border: 1px solid #fff; color: #fff;}
 /*bubble*/
 .cruzrone .cruzr .bubble{background: #000; margin-top: 52px; width: 100%; height: 100%;}
-.cruzrone .cruzr .bubble .img{width: 100%; height: 90%; background: red;}
+.cruzrone .cruzr .bubble .img{width: 100%; height: 90%; background: #1f1f1f;}
 .cruzrone .cruzr .bubble .img img{width: 100%; height: 90%;}
-.cruzrone .cruzr .bubble .txt{text-align: center; background: #1f1f1f; padding: 29px 0; margin-top: -30px;}
+.cruzrone .cruzr .bubble .txt{text-align: center; background: #1f1f1f; padding: 50px 0; margin-top: -30px;}
 .cruzrone .cruzr .bubble .txt h2{margin-bottom: 10px; font-size: 20px;}
 .cruzrone .cruzr .bubble .txt p{font-size: 15px; margin-bottom: 25px;}
 .cruzrone .cruzr .bubble .txt a{font-size: 16px; padding: 8px 30px; border-radius: 50px; border: 1px solid #fff; color: #fff;}
 
 /*right_below*/
-.cruzrone .right_below{background: url(../img/below.jpg); width: 50%; height: 75vh; float: right;
+.cruzrone .right_below{background: url(../img/below.jpg); width: 50%; height: 80vh; float: right;
 background-position: 50% 70%; position: relative;}
 .cruzrone .right_below img{position: absolute; left: 50%; right: 50%; transform: translate(-50%,150%); bottom: 55%;}
 /*footer*/
